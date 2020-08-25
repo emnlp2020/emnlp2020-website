@@ -109,7 +109,7 @@ Riezler](http://www.cl.uni-heidelberg.de/statnlpgroup/members/riezler/),
 
 ACs: Bill Byrne, Yang Feng, Jiatao Gu, Barry Haddow, Julia Kreutzer,
 Wolfgang Macherey, Lluís Màrquez, Jan Niehues, Tao Qin, Rico Sennrich,
-Jinsong Su, Josef van Genabith, Guillaume Wisniewski
+Jinsong Su, Josef van Genabith, Guillaume Wisniewski, Derek F. Wong
 
 ### NLP Applications
 
