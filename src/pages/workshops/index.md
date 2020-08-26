@@ -8,4 +8,4 @@ seo:
   title: Workshops | EMNLP 2020
 ---
 
-EMNLP offers 24 workshops to suit a wide range of interests.
+EMNLP offers 25 workshops to suit a wide range of interests. All workshops listed are one day in duration unless otherwise indicated.
