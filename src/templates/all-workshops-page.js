@@ -8,30 +8,44 @@ import PageHelmet from "../components/PageHelmet";
 import StandardPageTemplate from "../components/StandardPageTemplate";
 import "../styles/all-events-page.scss";
 
-const WorkshopListing = ({ title, summary, authors, url }) => (
+const WorkshopListing = ({ title, summary, authors, url, numDays }) => (
   <article className="event-listing">
     <h3><a href={url}>{title}</a></h3>
     <div className="event-organizers">{authors}</div>
-    <p className="event-summary">{summary}</p>
+    <p className="event-summary">    
+      {numDays > 1 ? <div className="event-duration">{numDays} days</div> : null}
+      {summary}
+    </p>
   </article>
 );
 
-const AllWorkshops = ({ workshops }) => (
-  <section className="all-events">
-    {workshops.map(w => <WorkshopListing {...w} key={w.workshopNumber} />)}
+const WorkshopsForDate = ({ date, workshops }) => (
+  <section className="events-for-date">
+    <h2>{date}</h2>
+    <section className="workshops">
+      {workshops.map(w => <WorkshopListing {...w} key={w.workshopId} />)}
+    </section>
   </section>
 );
 
+const AllWorkshopsByDate = ({ datesAndWorkshops }) => (
+  <section className="all-events">
+    {datesAndWorkshops.map(({ date, workshops }) => <WorkshopsForDate key={date} date={date} workshops={workshops} />)}
+  </section>
+);
+
+
 const AllWorkshopsPage = ({ data }) => {
   const { markdownRemark: page, footerData, navbarData, site, allWorkshopsCsv } = data;
-  const { workshops } = allWorkshopsCsv
+  const { workshopsByDate } = allWorkshopsCsv
+  const datesAndWorkshops = workshopsByDate.map(({workshops}) => ({ date: workshops[0].startDate, workshops }))
 
   return (
     <Layout footerData={footerData} navbarData={navbarData} site={site}>
       <PageHelmet page={page} />
       <StandardPageTemplate page={{ ...page }}>
         <HTMLContent className="default-content" content={page.html} />
-        <AllWorkshops workshops={workshops}/>
+        <AllWorkshopsByDate datesAndWorkshops={datesAndWorkshops}/>
       </StandardPageTemplate>
     </Layout>
   );
@@ -57,12 +71,16 @@ export const allWorkshopsPageQuery = graphql`
       }
     }
     allWorkshopsCsv {
-      workshops: nodes {
-        authors
-        workshopNumber
-        url
-        title
-        summary
+      workshopsByDate: group(field: startDate) {
+        workshops: nodes {
+          authors
+          workshopNumber
+          url
+          title
+          summary
+          startDate(formatString: "MMMM D, YYYY")
+          numDays
+        }
       }
     }
     ...LayoutFragment
