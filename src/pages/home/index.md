@@ -10,6 +10,8 @@ seo:
     The 2020 Conference on Empirical Methods in Natural Language Processing
   title: EMNLP 2020
 newsItems:
+  - date: 2020-09-14
+    text: "Authors are reminded that notifications will be sent by email to the contact author by 11.59 pm UTC -12h, September 14th. We ask authors to not repeatedly check status on Softconf before then."
   - date: 2020-06-04
     text: "While the extended deadline is now closing, we are happy to offer case-by-case 48 hour extensions to researchers affected by the power outages due to Nisagra cyclone in India. Please [email the Program Chairs](mailto:emnlp2020programmechairs@gmail.com) with your updated or late submission and an explanation of your circumstance."
   - date: 2020-06-01
