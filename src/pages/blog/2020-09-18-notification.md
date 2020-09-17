@@ -52,6 +52,7 @@ We hope you share these sentiments!
 
 
 A few final comments:
+
 * If you didn’t get an email notification about your paper, please contact us at [emnlp2020programmechairs@gmail.com](mailto:emnlp2020programmechairs@gmail.com) 
 * If you have a paper accepted to Findings, you cannot submit this elsewhere, as this is considered to be full publication. If you wish to submit to another conference or similar, then you will need to withdraw from Findings. 
 * Findings does not include a presentation or a poster presentation. Having said this, we will check with EMNLP workshop organisers, who may wish to invite authors to present their work at a workshop.
