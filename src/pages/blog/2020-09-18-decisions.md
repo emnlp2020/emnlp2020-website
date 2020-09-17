@@ -32,7 +32,7 @@ As outlined in the email, there are two impending deadlines:
 versions. Please take into account the reviewer and meta-reviewer (AC)
 comments, and upload your paper by 5th October. The same deadline applies to
 EMNLP papers and Findings papers. You are allowed an additional content page in
-your camera ready submission, please use this space to address the reviewers’
+your camera ready submission; please use this space to address the reviewers’
 comments.
 
 
