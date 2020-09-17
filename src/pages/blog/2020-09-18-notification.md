@@ -59,4 +59,5 @@ A few final comments:
 * Publishing in Findings is free of charge, just like EMNLP. Authors of Findings papers will _not_ be required to register for the conference. All EMNLP papers are required to have at least one author register for the conference, in order to present their work.
 
 
-- EMNLP Programme Chairs
+
+EMNLP Programme Chairs
