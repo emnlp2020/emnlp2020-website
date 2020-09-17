@@ -3,7 +3,7 @@ templateKey: blog-post-page
 title: "Decisions"
 date: 2020-07-30
 seo:
-  title: "Decisions'
+  title: "Decisions"
   description: >- 
     Decisions have been finalised, and notifications emailed to contact
     authors.  Thanks for your patience! EMNLP will be the biggest NLP
