@@ -56,6 +56,10 @@ Paper submission is electronic, using the [Softconf START conference management 
 
 Style files should meet the requirements of the EMNLP main conference. Submissions may consist of up to 6 pages, plus unlimited references. Submissions must conform to the [EMNLP 2020 official style guidelines](/call-for-papers) and they must be in PDF format. The submissions have to be original work (unpublished), as the publication in EMNLP will be archival.
 
+## Multiple Submission Policy
+
+We follow the [Multiple Submission Policy](/call-for-papers#multiple-submission-policy) of the CFP of the EMNLP 2020 main conference.  The paper has to be written specifically for this conference and cannot be submitted elsewhere. The paper must also report on a substantial improvement (>30%), if the system that is being reported has been reported elsewhere already.
+
 ## Reviewing Policy
 
 Reviewing will be single-blind, so authors do not need to conceal their identity. The paper should include the authors’ names and affiliations. Self-references are also allowed.

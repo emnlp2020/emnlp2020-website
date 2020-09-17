@@ -1,8 +1,8 @@
-softconfNumber,tutorialNumber,title,topic,authors,kind,duration,workshopOverlap
-7,T1,"Machine Reasoning for Knowledgeable, Explainable and Inferable Models",Reasoning,"Nan Duan, Duyu Tang and Ming Zhou",Cutting-edge,3 hours,
-8,T2,Interpreting Predictions of NLP Models,Interpretability,"Eric Wallace, Matt Gardner and Sameer Singh",Cutting-edge,3 hours,
-13,T3,High Performance Natural Language Processing,DL techniques,"Gabriel Ilharco, Cesar Ilharco Magalhaes and Kenton Lee",Cutting-edge,3 hours,
-27,T4,"Fact-Checking, Fake News, Propaganda, and Media Bias: Truth Seeking in the Post-Truth Era",,Preslav Nakov and Giovanni Da San Martino,Introductory and cutting edge,3 hours,
-30,T5,The Amazing World of Neural Language Generation,,"Yangfeng Ji, Antoine Bosselut, Thomas Wolf and Asli Celikyilmaz",Cutting-edge,3 hours,
-33,T6,"Representation, Learning and Reasoning on Spatial Language for Down-stream NLP Tasks",Semantics,"Parisa Kordjamshidi, James Pustejovsky and Marie-Francine Moens",Cutting-edge,3 hours,
-48,T7,Simultaneous Translation,Translation,"Liang Huang, Colin Cherry, Mingbo Ma, Naveen Arivazhagan and Zhongjun He",,3 hours,
+softconfNumber,tutorialNumber,title,topic,authors,kind,duration,date
+7,T1,"Machine Reasoning for Knowledgeable, Explainable and Inferable Models",Reasoning,"Nan Duan, Duyu Tang and Ming Zhou",Cutting-edge,3 hours,2020-11-19
+8,T2,Interpreting Predictions of NLP Models,Interpretability,"Eric Wallace, Matt Gardner and Sameer Singh",Cutting-edge,3 hours,2020-11-19
+13,T3,High Performance Natural Language Processing,DL techniques,"Gabriel Ilharco, Cesar Ilharco Magalhaes and Kenton Lee",Cutting-edge,3 hours,2020-11-19
+27,T4,"Fact-Checking, Fake News, Propaganda, and Media Bias: Truth Seeking in the Post-Truth Era",,Preslav Nakov and Giovanni Da San Martino,Introductory and cutting edge,3 hours,2020-11-19
+30,T5,The Amazing World of Neural Language Generation,,"Yangfeng Ji, Antoine Bosselut, Thomas Wolf and Asli Celikyilmaz",Cutting-edge,3 hours,2020-11-20
+33,T6,"Representation, Learning and Reasoning on Spatial Language for Down-stream NLP Tasks",Semantics,"Parisa Kordjamshidi, James Pustejovsky and Marie-Francine Moens",Cutting-edge,3 hours,2020-11-20
+48,T7,Simultaneous Translation,Translation,"Liang Huang, Colin Cherry, Mingbo Ma, Naveen Arivazhagan and Zhongjun He",,3 hours,2020-11-20

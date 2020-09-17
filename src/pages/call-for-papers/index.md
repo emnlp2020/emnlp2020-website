@@ -95,6 +95,7 @@ Papers (whether refereed or not) appearing less than 3 months before the submiss
 
 For more information, see the [ACL Policies for Submission, Review, and Citation](https://www.aclweb.org/portal/content/new-policies-submission-review-and-citation)
 
+<span id="multiple-submission-policy"></span>
 
 ### Multiple Submission Policy
 

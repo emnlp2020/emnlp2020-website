@@ -2,6 +2,16 @@
   max-width: 800px;
 }
 
+.events-for-date {
+  margin-top: 2rem;
+  h2 {
+    font-weight: bold;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+}
+
 .event-listing {
   h3 {
     font-weight: bold;
@@ -14,4 +24,16 @@
   font-weight: bold;
   font-size: 0.8rem;
   margin-top: 0.3rem;
+}
+
+.event-duration {
+  background: gray;
+  color: white;
+  display: inline;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.2rem;
+  margin-right: 0.4rem;
 }

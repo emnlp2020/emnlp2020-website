@@ -36,6 +36,8 @@
   members:
   - name: Philippe Muller
     organization: University of Toulouse, France, UK
+  - name: Yang Gao
+    organization: Royal Holloway, University of London
   - name: Jing Li
     organization: The Hong Kong Polytechnic University, Hong Kong
   - name: Veronika Laippala
@@ -43,7 +45,7 @@
 - title: Publicity Chairs
   members:
   - name: Anna Rogers
-    organization: University of Massachusetts at Lowell, USA
+    organization: University of Copenhagen, Denmark
   - name: Ruifeng Xu
     organization: Harbin Institute of Technology, China
 - title: Website Chair
@@ -59,13 +61,29 @@
   - name: Isabelle Augenstein
     organization: University of Copenhagen
   - name: Chris Brew
-    organization: Facebook, USA
+    organization: "[NA]"
 - title: Diversity & Inclusion Student Chairs
   members:
   - name: Murathan Kurfali
     organization: University of Stockholm
   - name: Prathyusha Jwalapuram
     organization: Nanyang Technological University, Singapore
+- title: Virtual Infrastructure Co-chairs
+  members:
+  - name: Jan-Christoph Klie
+    organization: Technical University of Darmstadt, Germany
+  - name: Yang Feng
+    organization: Chinese Academy of Sciences, China
+  - name: Zhongyu Wei
+    organization: Fudan University, China
+  - name: Eduardo Blanco
+    organization: University of North Texas, USA
+- title: Advisors, Virtual Infrastructure Committee
+  members:
+  - name: Sudha Rao
+    organization: Microsoft Research, USA
+  - name: Hao Fang
+    organization: Microsoft Semantic Machines, USA
 - title: ACL Business Manager & Local Arrangements Chair
   members:
   - name: Priscilla Rasmussen

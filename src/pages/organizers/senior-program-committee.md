@@ -63,10 +63,10 @@ Kateryna Tymoshenko, Olga Uryupina
 
 ### Interpretability and Analysis of Models for NLP
 
-SAC: [William Wang](https://sites.cs.ucsb.edu/~william/)
+SAC: [Sameer Singh](http://sameersingh.org/), [William Wang](https://sites.cs.ucsb.edu/~william/)
 
-ACs: Yonatan Belinkov, Manaal Faruqui, Sameer Singh, Xu Sun, Byron
-Wallace, Diyi Yang
+ACs: Yonatan Belinkov, Shiyu Chang, Manaal Faruqui, Vivek Kulkarni, Hung-yi Lee, Xu Sun, Byron
+Wallace, Xin Wang, Diyi Yang
 
 ### Language Generation
 
@@ -81,7 +81,7 @@ Hiroya Takamura, Michael White, Samuel Wiseman, Wei Xu, Jin-Ge Yao
 
 SAC: [Lucia Specia](https://www.imperial.ac.uk/people/l.specia)
 
-ACs: Loic Barrault, Raffaella Bernardi, Demond Elliott, Lorenzo
+ACs: Loic Barrault, Raffaella Bernardi, Demond Elliott, Yishu Miao, Lorenzo
 Seidenari, Zhongyu Wei
 
 ### Linguistic Theories, Cognitive Modeling and Psycholinguistics
@@ -93,12 +93,12 @@ ACs: Ryan Cotterell, Aida Nematzadeh, Tim O\'Donnell, Leila Wehbe
 ### Machine Learning for NLP
 
 SAC: [Mohit Bansal](http://www.cs.unc.edu/~mbansal/), [Reza
-Haffari](https://research.monash.edu/en/persons/reza-haffari)
+Haffari](https://research.monash.edu/en/persons/reza-haffari), [Yulia Tsvetkov](https://www.cs.cmu.edu/~ytsvetko/)
 
 ACs: Wray Buntine, Kai-Wei Chang, Colin Cherry, Shay Cohen, Kevin Duh,
-Sarvnaz Karimi, Andre Martins, Massimo Piccardi, Colin Raffel, Sebastian
-Ruder, Sasha Rush, Shashank Srivastava, Pontus Stenetorp, Emma Strubell,
-Jun Suzuki, Kristina Toutanova, Adam Trischler, Yulia Tsvetkov, Dani
+Sarvnaz Karimi, Karen Livescu, Andre Martins, Massimo Piccardi, Colin Raffel, Sebastian
+Ruder, Rachel Rudinger, Sasha Rush, Shashank Srivastava, Pontus Stenetorp, Emma Strubell,
+Jun Suzuki, Kristina Toutanova, Adam Trischler, Dani
 Yogatama
 
 ### Machine Translation and Multilinguality 
@@ -109,16 +109,16 @@ Riezler](http://www.cl.uni-heidelberg.de/statnlpgroup/members/riezler/),
 
 ACs: Bill Byrne, Yang Feng, Jiatao Gu, Barry Haddow, Julia Kreutzer,
 Wolfgang Macherey, Lluís Màrquez, Jan Niehues, Tao Qin, Rico Sennrich,
-Jinsong Su, Josef van Genabith, Guillaume Wisniewski
+Jinsong Su, Josef van Genabith, Guillaume Wisniewski, Derek F. Wong
 
 ### NLP Applications
 
 SACs: [Thamar Solorio](http://solorio.uh.edu/), [Deyu
 Zhou](http://palm.seu.edu.cn/zhoudeyu/Home.html)
 
-ACs: Helena Gomez, Lei Li, Yunyao Li, Maria Liakata, Nedim Lipka, Makoto
-Miwa, Tristan Naumann, Alice Oh, Veronica Perez-Rosas, Sara Stymne, Ivan
-Vladimir Meza, Rui Xia, Helen Yannakoudakis
+ACs: Tao Ge, Helena Gomez, Lei Li, Yunyao Li, Maria Liakata, Nedim Lipka, Makoto
+Miwa, Tristan Naumann, Alice Oh, Veronica Perez-Rosas, Alla Rozovskaya, Sara Stymne, Ivan
+Vladimir Meza, David Vilar, Rui Xia, Helen Yannakoudakis
 
 ### Phonology, Morphology and Word Segmentation
 
@@ -148,7 +148,7 @@ SACs: [Ivan Titov](http://ivan-titov.org/), [Yue
 Zhang](https://frcchang.github.io/)
 
 ACs: Jonathan Berant, Xavier Carreras, Li Dong, Anette Frank, James
-Henderson, Zhenzhong Lan, Siva Reddy, Michael Roth, Linfeng Song,
+Henderson, Zhenzhong Lan, Christopher Potts, Siva Reddy, Michael Roth, Linfeng Song,
 Gabriel Stanovsky
 
 ### Sentiment Analysis, Stylistic Analysis, and Argument Mining

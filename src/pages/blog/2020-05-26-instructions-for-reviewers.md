@@ -2,6 +2,11 @@
 templateKey: blog-post-page
 title: "Instructions for Reviewers"
 date: 2020-05-26
+updated:
+  - date: 2020-06-19
+    details: Removed reference to poster presentations
+  - date: 2020-08-10
+    details: Added link to review form
 seo:
   title: "Instructions for Reviewers for EMNLP 2020"
   description: >- 
@@ -22,7 +27,7 @@ participants in and content of discussion on submissions, are
 ## The Review Form
 
 We adapted the review form from [ACL
-2020](https://acl2020.org/reviewers/). The review form consists of three
+2020](https://acl2020.org/reviewers/). The [review form](/files/EMNLP2020-Review-Form.pdf) consists of three
 main sections.
 
 **1. In-Depth Review:** This section is for you to give your overall
@@ -112,10 +117,9 @@ to help them improve the paper for the final version (or a future
 submission).
 
 **3. Confidential Information:** Your answers to questions in this
-section will not be shared with the authors. Here we ask you about the
-recommended presentation type (oral vs. poster), recommendation for
-awards, any ethical concerns, and confidential comments to the area
-chairs and/or PC chairs.
+section will not be shared with the authors. Here we ask you about 
+recommendations for awards, any ethical concerns, and confidential
+comments to the area chairs and/or PC chairs.
 
 For Best Paper Award, please be open minded and feel free to nominate
 good quality papers even though they may not be the typical types. These
@@ -170,7 +174,7 @@ Earth). Please note that there is a reviewer discussion period from
 August 14 to 24 after the author response.
 Your duties are listed below. Don't leave reviewing to the last minute!
 
--   June 26 – July 30: Review Period
+-   June 29 – July 30: Review Period
 -   August 7 – 13: Author response period
 -   August 14 – 20: Reviewer discussion period
 

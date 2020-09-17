@@ -16,22 +16,32 @@ const TutorialListing = ({ title, authors, url }) => (
   </article>
 );
 
-const AllTutorials = ({ tutorials }) => (
+const TutorialsForDate = ({ date, tutorials }) => (
+  <section className="events-for-date">
+    <h2>{date}</h2>
+    <section className="tutorials">
+      {tutorials.map(t => <TutorialListing {...t} key={t.tutorialNumber} />)}
+    </section>
+  </section>
+);
+
+const AllTutorialsByDate = ({ datesAndTutorials }) => (
   <section className="all-events">
-    {tutorials.map(t => <TutorialListing {...t} key={t.tutorialNumber} />)}
+    {datesAndTutorials.map(({ date, tutorials }) => <TutorialsForDate key={date} date={date} tutorials={tutorials} />)}
   </section>
 );
 
 const AllTutorialsPage = ({ data }) => {
   const { markdownRemark: page, footerData, navbarData, site, allTutorialsCsv } = data;
-  const { tutorials } = allTutorialsCsv
+  const { tutorialsByDate } = allTutorialsCsv
+  const datesAndTutorials = tutorialsByDate.map(({tutorials}) => ({ date: tutorials[0].date, tutorials }))
 
   return (
     <Layout footerData={footerData} navbarData={navbarData} site={site}>
       <PageHelmet page={page} />
       <StandardPageTemplate page={{ ...page }}>
         <HTMLContent className="default-content" content={page.html} />
-        <AllTutorials tutorials={tutorials}/>
+        <AllTutorialsByDate datesAndTutorials={datesAndTutorials} />
       </StandardPageTemplate>
     </Layout>
   );
@@ -57,10 +67,13 @@ export const allWorkshopsPageQuery = graphql`
       }
     }
     allTutorialsCsv {
-      tutorials: nodes {
-        authors
-        tutorialNumber
-        title
+      tutorialsByDate: group(field: date) {
+        tutorials: nodes {
+          authors
+          tutorialNumber
+          title
+          date(formatString: "MMMM D, YYYY")
+        }
       }
     }
     ...LayoutFragment

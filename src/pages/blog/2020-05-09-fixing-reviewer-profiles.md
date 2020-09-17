@@ -2,6 +2,9 @@
 templateKey: blog-post-page
 title: "How to fix your reviewer profiles"
 date: 2020-05-09
+updated: 
+  - date: 2020-06-11
+    details: "Clarified details of reviewer profile fields that are needed."
 seo:
   title: "How to fix your reviewer profiles"
   description: >- 

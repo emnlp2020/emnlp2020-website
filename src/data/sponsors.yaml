@@ -3,7 +3,7 @@
     - name: Bloomberg Engineering
       link: https://www.bloomberg.com/company/engineering/
     - name: Google
-      link: https://google.com
+      link: https://research.google
     - name: Apple
       link: https://apple.com
     - name: Amazon
@@ -14,11 +14,29 @@
       link: https://baidu.com
     - name: Megagon Labs
       link: https://megagon.ai
+    - name: Facebook
+      link: https://facebook.com
+    - name: DeepMind
+      link: https://deepmind.com
+- levelName: Gold
+  sponsors:
+    - name: Grammarly
+      link: https://www.grammarly.com
+    - name: ByteDance
+      link: https://www.bytedance.com
 - levelName: Silver
   sponsors:
     - name: Babelscape
       link: https://babelscape.com/
+    - name: Naver Labs Europe
+      link: https://www.naverlabs.com
+    - name: Adobe
+      link: https://adobe.com
 - levelName: Bronze
   sponsors:
     - name: ISI
       link: https://www.isi.edu/
+- levelName: "Diversity and Inclusion: Champion"
+  sponsors:
+    - name: DeepMind
+      link: https://deepmind.com
