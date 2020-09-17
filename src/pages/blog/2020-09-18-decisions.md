@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post-page
 title: "Decisions"
-date: 2020-07-30
+date: 2020-09-18
 seo:
   title: "Decisions"
   description: >- 
