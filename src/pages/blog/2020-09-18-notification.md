@@ -61,4 +61,4 @@ A few final comments:
 
 
 
-EMNLP Programme Chairs
+ – *EMNLP Programme Chairs*
