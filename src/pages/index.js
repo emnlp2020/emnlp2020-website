@@ -12,7 +12,7 @@ import "../styles/home.scss";
 import HTMLContent from "../components/Content";
 
 const MAX_BLOG_POSTS = 4
-const MAX_NEWS_ITEMS = 5
+const RECENT_NEWS_ITEMS = 4
 
 const NewsItem = ({ date, text }) => (
   <tr className="news-item">
@@ -48,7 +48,7 @@ const NewsSection = ({ items }) => (
       <h4>Latest News <RssIcon link="/news/rss.xml"/></h4>
       <table className="news-section-list">
         <tbody>
-          {items.filter((i, idx) => idx < MAX_NEWS_ITEMS || i.persist).map(i => <NewsItem {...i} key={i.text}/>)}
+          {items.filter((i, idx) => idx < RECENT_NEWS_ITEMS || i.persist).map(i => <NewsItem {...i} key={i.text}/>)}
         </tbody>
       </table>
     </section>
