@@ -8,7 +8,7 @@ seo:
   title: Registration | EMNLP 2020
 ---
 
-* **[Registration Site](https://aclweb.org/conference/emnlp-2020-conference-registration/)**
+* **[Registration Site](https://aclweb.org/conference/virtual-emnlp-2020-conference-registration/)**
 
 The EMNLP 2020 registration fees are drastically reduced, reflecting our
 move to being 100% virtual. We are offering Early rates through October
@@ -26,7 +26,7 @@ at \$150 and Student at \$50.
 **Late registration** begins October 31, 2020 and remains open
 throughout the conference, with Regular at \$200 and Student at \$75
 
-* [Registration site](https://aclweb.org/conference/emnlp-2020-conference-registration/)
+* [Registration site](https://aclweb.org/conference/virtual-emnlp-2020-conference-registration/)
 
 ## Registration Types
 
