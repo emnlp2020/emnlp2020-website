@@ -10,6 +10,8 @@ seo:
     The 2020 Conference on Empirical Methods in Natural Language Processing
   title: EMNLP 2020
 newsItems:
+  - date: 2020-09-23
+    text: "[Registration is now open](/registration)"
   - date: 2020-09-21
     text: EMNLP is [seeking expressions of interest for hosting host affinity group socials](https://www.aclweb.org/portal/content/emnlp-2020-affinity-group-socials), to help build connections within the ACL community not purely based on overlap of technical expertise.
   - date: 2020-09-14
