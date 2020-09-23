@@ -1,6 +1,9 @@
 ---
 templateKey: navbar
 menuItems:
+  - label: registration
+    linkType: internal
+    linkURL: /registration
   - label: blog
     linkType: internal
     linkURL: /blog
@@ -13,9 +16,6 @@ menuItems:
   - label: tutorials
     linkType: internal
     linkURL: /tutorials
-  - label: attending
-    linkType: internal
-    linkURL: /attending
   - label: organizers
     linkType: internal
     linkURL: /organizers
