@@ -10,7 +10,7 @@ seo:
 
 The ACL 2020 reviewing meeting featured a lively discussion of the proposed changes to reviewing for ACL affiliated conferences. Thanks to all who participated for your questions and comments! 
 
-Part of the discussion centred around “Findings”, a new publication outlet being trialed in EMNLP 2020, which is based on a proposal developed by the ACL review committee (a.k.a. “ACL archives”). This post is an  attempt to close the loop, by responding to criticisms raised by the community. 
+Part of the discussion centred around [“Findings”](/blog/2020-04-19-findings-of-emnlp), a new publication outlet being trialed in EMNLP 2020, which is based on a proposal developed by the ACL review committee (a.k.a. “ACL archives”). This post is an  attempt to close the loop, by responding to criticisms raised by the community. 
 
 Common concerns raised about Findings include:
 
@@ -20,7 +20,7 @@ We don’t expect this to happen, but acknowledge the risk. Based on this feedba
 
 ## Can we define more precisely what separates a Findings paper from a main conference paper?
 
-While we would love to, it is very difficult to pin down. We have some broad guidelines in our earlier blog post, and a clearer definition might be possible in future. For the time being, we hope that the differences will emerge organically, similar to the difference between talks and posters at a standard conference, which also lacks a concrete definition.
+While we would love to, it is very difficult to pin down. We have some broad guidelines in our [earlier blog post](/blog/2020-04-19-findings-of-emnlp), and a clearer definition might be possible in future. For the time being, we hope that the differences will emerge organically, similar to the difference between talks and posters at a standard conference, which also lacks a concrete definition.
 
 ## How will we measure the success or otherwise of the Findings experiment?
 
