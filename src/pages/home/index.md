@@ -10,6 +10,8 @@ seo:
     The 2020 Conference on Empirical Methods in Natural Language Processing
   title: EMNLP 2020
 newsItems:
+  - date: 2020-09-26
+    text: Authors of papers accepting to [_Findings_](/blog/2020-07-30-findings-acl-response) will be asked next week about their preferences for also presenting their work (at the discretion of workshop chairs) at participating workshops.
   - date: 2020-09-23
     text: "[Registration is now open](/registration)"
   - date: 2020-09-21
