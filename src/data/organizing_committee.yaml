@@ -10,6 +10,9 @@
     organization: University of Warwick, UK
   - name: Yang Liu
     organization: Amazon – Alexa AI, USA
+  subcommittee:
+    title: Senior Program Committee
+    link: /organizers/senior-program-committee  
 - title: Workshop Chairs
   members:
   - name: Lonneke van der Plas
@@ -88,6 +91,15 @@
     organization: Microsoft Research, USA
   - name: Hao Fang
     organization: Microsoft Semantic Machines, USA
+- title: Ethics Committee Chairs
+  members: 
+    - name: Dirk Hovy
+      organization: Bocconi University, Italy
+    - name: Karën Fort
+      organization: Sorbonne University, France
+  subcommittee:
+    title: Ethics Committee
+    link: /organizers/ethics-committee
 - title: ACL Business Manager & Local Arrangements Chair
   members:
   - name: Priscilla Rasmussen
