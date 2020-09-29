@@ -35,13 +35,17 @@
 - title: Publication Chairs
   members:
   - name: Philippe Muller
-    organization: University of Toulouse, France, UK
+    organization: University of Toulouse, France
   - name: Yang Gao
-    organization: Royal Holloway, University of London
-  - name: Jing Li
-    organization: The Hong Kong Polytechnic University, Hong Kong
+    organization: Royal Holloway, University of London, UK
   - name: Veronika Laippala
     organization: University of Turku, Finland
+- title: Findings Chairs
+  members:
+  - name: Jing Li
+    organization: The Hong Kong Polytechnic University, Hong Kong
+  - name: Lemao Lio
+    organization: Tencent AI Lab, China
 - title: Publicity Chairs
   members:
   - name: Anna Rogers
