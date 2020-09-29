@@ -6,7 +6,7 @@ seo:
   description: 
   title: Senior Program Committee | EMNLP 2020
 ---
-## Program Chairs
+## [Program Chairs](/organizers/#program-co-chairs)
 
 [Trevor Cohn](https://people.eng.unimelb.edu.au/tcohn/), University of
 Melbourne
@@ -16,7 +16,7 @@ University of Warwick
 
 [Yang
 Liu](https://scholar.google.co.uk/citations?user=w90wOucAAAAJ&hl=en),
-Amazon -- Alexa AI, USA
+Amazon – Alexa AI, USA
 
 ## Senior Area Chairs (SACs) and Area Chairs (ACs)
 

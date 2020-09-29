@@ -8,6 +8,7 @@ import PageHelmet from "../components/PageHelmet";
 import StandardPageTemplate from "../components/StandardPageTemplate";
 import "../styles/organizers-page.scss";
 import Img from "gatsby-image";
+import slug from "slug";
 
 // const imagePathForName = (name) => `people/org-committee/${imageStem(name)}`;
 
@@ -33,12 +34,13 @@ const MemberListing = ({ name, organization, sharpImageData }) => (
   </article>
 );
 
-const RoleListing = ({ title, members, images }) => (
+const RoleListing = ({ title, members, images, subcommittee }) => (
   <section className="role-listing">
-    <h3 className="role-title">{title}</h3>
+    <h3 className="role-title" id={slug(title, {lower: true})}>{title}</h3>
     <div className="role-listing-members">
       {members.map(m => <MemberListing {...m} sharpImageData={images.get(imageStem(m.name))} key={m.name}/>)}
     </div>
+    {subcommittee && <SubCommitteeLink {...subcommittee}/>}
   </section>
 );
 
@@ -47,6 +49,10 @@ const AllCommitteeRoles = ({ roles, images }) => (
     {roles.map(r => <RoleListing {...r} key={r.title} images={images} />)}
   </section>
 );
+
+const SubCommitteeLink = ({title, link}) => (
+  <a class="subcommittee-link" href={link}>{title}</a>
+)
 
 const OrgCommitteePage = ({ data }) => {
   const { markdownRemark: page, footerData, navbarData, site, committee, committeeImages } = data;
@@ -90,6 +96,10 @@ export const organizersPageQuery = graphql`
         members {
           name
           organization
+        }
+        subcommittee {
+          title
+          link
         }
       }
     }
