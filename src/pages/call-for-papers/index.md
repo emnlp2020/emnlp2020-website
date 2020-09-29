@@ -12,6 +12,7 @@ seo:
 * **Authors can [submit their papers](https://www.softconf.com/emnlp2020/papers) using Softconf**
 * **Further details about the submission process are available in the [FAQ page](/blog/2020-05-01-submission-faqs-answered)**
 * **The [call for system demonstrations](/call-for-papers/demos) is also available**
+* **Authors may now wish to view [instructions for camera-ready papers](/call-for-papers/camera-ready)**
 
 ## Overview
 
@@ -24,7 +25,7 @@ The 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP 2
 - Submission deadline (long & short papers): June 3, 2020
 - Author response period: August 7-13, 2020
 - Notification of acceptance (long & short papers): September 14, 2020
-- Camera-ready papers due (long & short papers): October 5, 2020
+- [Camera-ready papers](/call-for-papers/camera-ready) due (long & short papers): October 5, 2020
 - Main conference: November 16-18, 2020
 - Workshops and tutorials: November 19-20, 2020
 
