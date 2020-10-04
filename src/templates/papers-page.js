@@ -17,7 +17,7 @@ const SearchBox = ({text, setText}) => {
       <div className="search-wrapper">
         <input
             aria-roledescription="search papers"
-            type="text"
+            type="search"
             value={text}
             placeholder="Filter by author or title"
             onChange={(event) => setText(event.target.value)}
