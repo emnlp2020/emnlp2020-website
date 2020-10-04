@@ -1,5 +1,6 @@
 ---
 templateKey: papers-page
+section: papers
 title: Findings Accepted Papers
 description: "Papers accepted for publication in Findings of ACL: EMNLP 2020"
 acceptanceStatusKey: "Accept-Findings"
@@ -10,3 +11,4 @@ seo:
   title: "Accepted Papers – Findings of ACL: EMNLP 2020"
 ---
 
+There were **342 long papers** and **116 short papers** accepted to *Findings of ACL: EMNLP 2020*.

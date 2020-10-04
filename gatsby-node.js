@@ -21,6 +21,8 @@ exports.createPages = ({ actions, graphql }) => {
             frontmatter {
               templateKey
               acceptanceStatusKey
+              section
+              forSection
             }
           }
         }

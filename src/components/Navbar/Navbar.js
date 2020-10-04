@@ -1,5 +1,5 @@
 import React from "react";
-
+import { graphql } from 'gatsby'
 import "./styles.scss";
 import CustomLink from "../CustomLink";
 
@@ -11,7 +11,7 @@ export const NavbarTemplate = ({ data }) => (
           {data.menuItems.map(menuItem => (
             <li key={menuItem.linkURL} className="navbar-menuItem" title={menuItem.longLabel}>
               <CustomLink
-                linkType={menuItem.linkType}
+                linkType={menuItem.linkType || 'internal'}
                 linkURL={menuItem.linkURL}
                 className="navbar-menuLink"
               >
@@ -32,5 +32,27 @@ const Navbar = props => {
   const data = props.data.edges[0].node.frontmatter;
   return <NavbarTemplate data={data} />;
 };
+
+export const fieldsFragment = graphql`
+  fragment NavbarFieldsFragment on MarkdownRemarkConnection {
+    edges {
+      node {
+        id
+        frontmatter {
+          logoImage {
+            image
+            imageAlt
+          }
+          menuItems {
+            label
+            linkType
+            linkURL
+            longLabel
+          }
+        }
+      }
+    }
+  }
+`
 
 export { Navbar };

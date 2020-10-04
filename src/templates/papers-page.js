@@ -34,11 +34,11 @@ function getPapersByLength(byLengthFromGql) {
 }
 
 const PapersPage = ({ data }) => {
-  const { footerData, navbarData, site, markdownRemark: page } = data;
+  const { footerData, navbarData, site, markdownRemark: page, secondaryNavData } = data;
   const byLength = getPapersByLength(data.groupedPapers.group)
   
   return (
-    <Layout footerData={footerData} navbarData={navbarData} site={site}>
+    <Layout footerData={footerData} navbarData={navbarData} secondaryNavData={secondaryNavData} site={site}>
       <PageHelmet page={page} />
       <StandardPageTemplate page={{ ...page }}>
         <HTMLContent className="default-content" content={page.html} />
@@ -75,5 +75,8 @@ export const submissionsQuery = graphql`
       }
     }
     ...LayoutFragment
+    secondaryNavData: allMarkdownRemark(filter: { frontmatter: { forSection: { eq: "papers" } } }) {
+      ...NavbarFieldsFragment
+    }
   }
 `
