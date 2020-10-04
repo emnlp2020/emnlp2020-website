@@ -40,7 +40,7 @@ const PapersPage = ({ data }) => {
   return (
     <Layout footerData={footerData} navbarData={navbarData} secondaryNavData={secondaryNavData} site={site}>
       <PageHelmet page={page} />
-      <StandardPageTemplate page={{ ...page }}>
+      <StandardPageTemplate page={{ ...page }} className="papers-container">
         <HTMLContent className="default-content" content={page.html} />
         {byLength.map(({papers, length}) => <VenuePaperListing papers={papers} length={length}/>)}
       </StandardPageTemplate>
