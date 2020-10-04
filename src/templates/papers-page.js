@@ -1,4 +1,5 @@
 import { graphql } from 'gatsby'
+import slug from 'slug'
 import StandardPageTemplate from "../components/StandardPageTemplate";
 import React from "react";
 import Layout from "../components/Layout";
@@ -18,9 +19,9 @@ const SinglePaperListing = ({ paper }) => (
   </article>
 );
 
-const VenuePaperListing = ({ venue, papers, length }) => (
+const VenuePaperListing = ({ papers, length }) => (
   <section className="track-paper-listing">
-    <h3 className="track-name">{venue}: {length}</h3>
+    <h3 className="track-name" id={slug(length, {lower: true})}>{length}</h3>
     <section className="papers-in-track">
       { papers.map(p => <SinglePaperListing paper={p} key={p.number} />) }
     </section>
@@ -28,25 +29,20 @@ const VenuePaperListing = ({ venue, papers, length }) => (
 );
 
 function getPapersByLength(byLengthFromGql) {
-  return byLengthFromGql.map(({ edges: paperNodes, fieldValue: length}) => 
+  return byLengthFromGql.map(({ edges: paperNodes, fieldValue: length}) =>
     ({papers: paperNodes.map(pn => pn.node), length: lengths[length]}))
 }
 
 const PapersPage = ({ data }) => {
   const { footerData, navbarData, site, markdownRemark: page } = data;
-  const { group: byLengthFromGql } = data.mainConference;
-
-  const byLengthMain = getPapersByLength(data.mainConference.group)
-
-  const byLengthFindings = getPapersByLength(data.findings.group)
+  const byLength = getPapersByLength(data.groupedPapers.group)
   
   return (
     <Layout footerData={footerData} navbarData={navbarData} site={site}>
       <PageHelmet page={page} />
       <StandardPageTemplate page={{ ...page }}>
         <HTMLContent className="default-content" content={page.html} />
-        {byLengthMain.map(({papers, length}) => <VenuePaperListing venue="Main Conference" papers={papers} length={length}/>)}
-        {byLengthFindings.map(({papers, length}) => <VenuePaperListing venue="Findings" papers={papers} length={length}/>)}
+        {byLength.map(({papers, length}) => <VenuePaperListing papers={papers} length={length}/>)}
       </StandardPageTemplate>
     </Layout>
   );
@@ -55,7 +51,7 @@ const PapersPage = ({ data }) => {
 export default PapersPage;
 
 export const submissionsQuery = graphql`
-  query Submissions($id: String!) {
+  query Submissions($id: String!, $acceptanceStatusKey: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
@@ -67,18 +63,7 @@ export const submissionsQuery = graphql`
         }
       }
     }
-    mainConference: allPapersCsv(filter: {acceptanceStatus: {eq: "Accept"}}) {
-      group(field: submissionType) {
-        edges {
-          node {
-            authors
-            title
-          }
-        }
-        fieldValue
-      }
-    }
-    findings: allPapersCsv(filter: {acceptanceStatus: {eq: "Accept-Findings"}}) {
+    groupedPapers: allPapersCsv(filter: { acceptanceStatus: { eq: $acceptanceStatusKey }}) {
       group(field: submissionType) {
         edges {
           node {
