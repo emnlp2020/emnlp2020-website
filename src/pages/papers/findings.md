@@ -11,4 +11,4 @@ seo:
   title: "Accepted Papers – Findings of ACL: EMNLP 2020"
 ---
 
-There were **342 long papers** and **116 short papers** accepted to *Findings of ACL: EMNLP 2020*.
+There were **342 [long papers](#long-papers)** and **116 [short papers](#short-papers)** accepted to *Findings of ACL: EMNLP 2020*.

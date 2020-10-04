@@ -10,4 +10,4 @@ seo:
     These papers have been accepted for some form of presentation at EMNLP
   title: Accepted Papers – EMNLP 2020
 ---
-There were **602 long papers** and **151 short papers** accepted.
+There were **602 [long papers](#long-papers)** and **151 [short papers](#short-papers)** accepted.
