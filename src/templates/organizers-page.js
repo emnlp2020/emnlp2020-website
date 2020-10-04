@@ -10,8 +10,6 @@ import "../styles/organizers-page.scss";
 import Img from "gatsby-image";
 import slug from "slug";
 
-// const imagePathForName = (name) => `people/org-committee/${imageStem(name)}`;
-
 const imageStem = (name) => `${name.toLowerCase().replace(/ /g, '_')}`;
 
 const MemberPhoto = ({ sharpImageData, name }) => (

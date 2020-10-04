@@ -1,7 +1,7 @@
 @import "./variables.scss";
 @import "./mixins.scss";
 
-.about {
+.default {
   &-header {
     display: flex;
     flex-direction: column;
@@ -17,6 +17,10 @@
     > div {
       max-width: $page-content-width;
     }
+  }
+
+  &-container {
+    max-width: $page-content-width;
   }
 
   &-titleWrapper {

@@ -1,15 +1,15 @@
 import React from "react";
 
 const StandardPageTemplate = props => {
-  const { page, endContent } = props;
+  const { page, endContent, className } = props;
   const { title } = page.frontmatter;
 
   return (
-    <article className="about">
-      <div className="about-container  container">
-        <section className="about-header">
-          <div className="about-titleWrapper">
-            <h1 className="about-title">{title}</h1>
+    <article className="default">
+      <div className={`{${className || "default-container"}}  container`}>
+        <section className="default-header">
+          <div className="default-titleWrapper">
+            <h1 className="default-title">{title}</h1>
           </div>
         </section>
         <section className="section">

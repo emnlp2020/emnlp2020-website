@@ -5,7 +5,7 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import BlogIndexContent from "../components/BlogIndexContent";
 import PageHelmet from "../components/PageHelmet";
-import "../styles/about-page.scss";
+import "../styles/default-page.scss";
 import StandardPageTemplate from "../components/StandardPageTemplate";
 
 const BlogIndexPage = ({ data }) => {
