@@ -12,19 +12,22 @@ const lengths = {
   "Short Paper": "Short Papers"
 }
 
+
 const SinglePaperListing = ({ paper }) => (
-  <article className="single-paper-listing" title={paper.abstract}>
-    <span className="paper-authors">{paper.authors}</span>
-    <span className="paper-title">{paper.title}</span>
-  </article>
+  <li className="single-paper-wrapper">
+    <article className="single-paper-listing" title={paper.abstract}>
+      <span className="paper-title">{paper.title}. </span>
+      <span className="paper-authors">{paper.authors}.</span>
+    </article>
+  </li>
 );
 
 const VenuePaperListing = ({ papers, length }) => (
   <section className="track-paper-listing">
     <h3 className="track-name" id={slug(length, {lower: true})}>{length}</h3>
-    <section className="papers-in-track">
+    <ul className="papers-in-track">
       { papers.map(p => <SinglePaperListing paper={p} key={p.number} />) }
-    </section>
+    </ul>
   </section>
 );
 

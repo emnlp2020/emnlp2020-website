@@ -3,7 +3,7 @@
 
 
 .papers-container {
-  max-width: $container-width;
+  max-width: $page-content-width;
 }
 
 h3.track-name {
@@ -17,24 +17,12 @@ h3.track-name {
 }
 
 .single-paper-listing {
-  margin-top: 0.4rem;
-  margin-bottom: 0.4rem;
-  font-size: 0.9rem;
-  padding: 0.25rem;
-
-  & .paper-authors {
-    display: block;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-  }
+  font-size: 0.85rem;
+  padding: 0.1rem;
 
   & .paper-title {
-    display: block;
     font-style: italic;
   }
-
-  min-width: 250px;
-  width: 25%;
 }
 
 .track-paper-listing {
@@ -42,7 +30,8 @@ h3.track-name {
 }
 
 .papers-in-track {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+}
+
+li.single-paper-wrapper {
+  list-style-type: circle;
 }
