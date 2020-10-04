@@ -15,7 +15,7 @@ const lengths = {
 
 const SinglePaperListing = ({ paper }) => (
   <li className="single-paper-wrapper">
-    <article className="single-paper-listing" title={paper.abstract}>
+    <article className="single-paper-listing">
       <span className="paper-title">{paper.title}. </span>
       <span className="paper-authors">{paper.authors}.</span>
     </article>
