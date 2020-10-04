@@ -10,6 +10,9 @@ seo:
     The 2020 Conference on Empirical Methods in Natural Language Processing
   title: EMNLP 2020
 newsItems:
+  - date: 2020-10-04
+    text: "[Applications for EMNLP 2020 Diversity & Inclusions subsidies](https://forms.office.com/Pages/ResponsePage.aspx?id=kX-So6HNlkaviYyfHO_6kc6sgtkevo5FlcuZ17FkylVUMlZDM0JHWVoxRFRBT0RZUERRRjAzSUNURC4u) 
+      are now open. You can apply for a registration subsidy, bandwidth subsidy, or care giving subsidy."
   - date: 2020-09-29
     text: "[Instructions for camera-ready papers](/call-for-papers/camera-ready) are now available"
   - date: 2020-09-26
