@@ -35,3 +35,13 @@ h3.track-name {
 li.single-paper-wrapper {
   list-style-type: circle;
 }
+
+.search-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+  input {
+    font-size: 1.1rem;
+  }
+}
