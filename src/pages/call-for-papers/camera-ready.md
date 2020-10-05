@@ -103,7 +103,7 @@ commands. Please try to follow these guidelines:
    - Ensure that your paper conforms to the provided styles, font and page size.
    - Include the authors' names and affiliations under the title.
    - De-anonymize references to your own work in the body of the paper.
-   - Where appropriate, add acknowledgments for colleagues, reviewers, and grants. Do not number the Acknowledgements section. Please note that the acknowledgement section should fit within the allowed page limits and be in the same font as the rest of the paper.
+   - Where appropriate, add acknowledgments for colleagues, reviewers, and grants. Do not number the Acknowledgements section. Please note that the acknowledgement section should be in the same font as the rest of the paper but does not count towards page limits.
    - Ensure that all tables, graphs, and figures are readable at standard resolutions.
    - If you have supplemental material (including written material, data, and/or code) ensure that all the components are put at the right place
  (see the [Appendices and supplemental material](#where-do-appendices-and-supplemental-material-go) section below for more details).
@@ -123,11 +123,9 @@ commands. Please try to follow these guidelines:
    For both long and short papers, EMNLP allows one extra page to help
    address reviewer comments.
    So long papers are permitted at most 9 pages of text while short papers may use up to 5 pages of text.
-   Acknowledgements are included in these limits on pages of text.
+   Acknowledgements are **excluded** in these limits on pages of text.
    Please use the extra space to help address reviewer comments.
    For both long and short papers, there is no page limit for references or appendices.
-   plus additional pages containing References, and Appendix.
-
 
 ##  What is the format for the camera-ready copy?
 
