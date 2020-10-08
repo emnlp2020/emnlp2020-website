@@ -34,6 +34,8 @@
       link: https://adobe.com
     - name: Hitachi
       link: http://www.hitachi.com/rd/index.html
+    - name: Salesforce
+      link: https://www.salesforce.com
 - levelName: Bronze
   sponsors:
     - name: ISI
