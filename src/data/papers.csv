@@ -249,7 +249,7 @@ submissionID,title,authors,track,acceptanceStatus,submissionType
 87,How do Decisions Emerge across Layers in Neural Models? Interpretation with Differentiable Masking,"Nicola De Cao, Michael Sejr Schlichtkrull, Wilker Aziz and Ivan Titov",Interpretability and Analysis of Models for NLP,Accept,Long Paper
 2410,Human-centric dialog training via offline reinforcement learning,"Natasha Jaques, Judy Hanwen Shen, Asma Ghandeharioun, Craig Ferguson, Agata Lapedriza, Noah Jones, Shixiang Gu and Rosalind Picard",Dialog and Interactive Systems,Accept,Long Paper
 2958,Human-in-the-loop Debugging Deep Text Classifiers,"Piyawat Lertvittayakumjorn, Lucia Specia and Francesca Toni",NLP Applications,Accept,Long Paper
-1928,HUSH: A Dataset and Platform for Human-in-the-Loop Story Generation,"Nader Akoury, Shufan Wang, Josh Whiting, Stephen Hood, Nanyun Peng and Mohit Iyyer",Language Generation,Accept,Long Paper
+1928,STORIUM: A Dataset and Evaluation Platform for Machine-in-the-Loop Story Generation,"Nader Akoury, Shufan Wang, Josh Whiting, Stephen Hood, Nanyun Peng and Mohit Iyyer",Language Generation,Accept,Long Paper
 1383,Identifying Elements Essential for BERT’s Multilinguality,Philipp Dufter and Hinrich Schütze,Machine Translation and Multilinguality,Accept,Long Paper
 1972,"""I’d rather just go to bed"": Understanding Indirect Answers","Annie Louis, Dan Roth and Filip Radlinski",Discourse and Pragmatics,Accept,Long Paper
 1377,"If beam search is the answer, what was the question?","Clara Meister, Ryan Cotterell and Tim Vieira",Language Generation:Best Paper Candidates,Accept,Long Paper
