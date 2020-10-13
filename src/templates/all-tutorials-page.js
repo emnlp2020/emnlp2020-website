@@ -32,12 +32,12 @@ const AllTutorialsByDate = ({ datesAndTutorials }) => (
 );
 
 const AllTutorialsPage = ({ data }) => {
-  const { markdownRemark: page, footerData, navbarData, site, allTutorialsCsv } = data;
+  const { markdownRemark: page, footerData, navbarData, site, allTutorialsCsv, secondaryNavData } = data;
   const { tutorialsByDate } = allTutorialsCsv
   const datesAndTutorials = tutorialsByDate.map(({tutorials}) => ({ date: tutorials[0].date, tutorials }))
 
   return (
-    <Layout footerData={footerData} navbarData={navbarData} site={site}>
+    <Layout {...{footerData, navbarData, secondaryNavData, site}}>
       <PageHelmet page={page} />
       <StandardPageTemplate page={{ ...page }}>
         <HTMLContent className="default-content" content={page.html} />
@@ -77,5 +77,8 @@ export const allWorkshopsPageQuery = graphql`
       }
     }
     ...LayoutFragment
+    secondaryNavData: allMarkdownRemark(filter: { frontmatter: { forSection: { eq: "program" } } }) {
+      ...NavbarFieldsFragment
+    }
   }
 `;

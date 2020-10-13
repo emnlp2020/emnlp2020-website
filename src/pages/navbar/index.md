@@ -8,12 +8,8 @@ menuItems:
     linkURL: /blog
   - label: calls
     linkURL: /call-for-papers
-  - label: papers
+  - label: program
     linkURL: /papers/main
-  - label: workshops
-    linkURL: /workshops
-  - label: tutorials
-    linkURL: /tutorials
   - label: organizers
     linkURL: /organizers
   - label: sponsors

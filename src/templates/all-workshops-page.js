@@ -36,13 +36,13 @@ const AllWorkshopsByDate = ({ datesAndWorkshops }) => (
 
 
 const AllWorkshopsPage = ({ data }) => {
-  const { markdownRemark: page, footerData, navbarData, site, allWorkshopsCsv } = data;
+  const { markdownRemark: page, footerData, navbarData, site, allWorkshopsCsv, secondaryNavData } = data;
   const { workshopsByDate } = allWorkshopsCsv
   const datesAndWorkshops = workshopsByDate.map(({workshops}) => ({ date: workshops[0].startDate, workshops }))
 
   return (
-    <Layout footerData={footerData} navbarData={navbarData} site={site}>
-      <PageHelmet page={page} />
+    <Layout {...{footerData, navbarData, secondaryNavData, site}}>
+    <PageHelmet page={page} />
       <StandardPageTemplate page={{ ...page }}>
         <HTMLContent className="default-content" content={page.html} />
         <AllWorkshopsByDate datesAndWorkshops={datesAndWorkshops}/>
@@ -84,5 +84,8 @@ export const allWorkshopsPageQuery = graphql`
       }
     }
     ...LayoutFragment
+    secondaryNavData: allMarkdownRemark(filter: { frontmatter: { forSection: { eq: "program" } } }) {
+      ...NavbarFieldsFragment
+    }
   }
 `;
