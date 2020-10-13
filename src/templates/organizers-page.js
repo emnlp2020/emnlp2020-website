@@ -7,6 +7,7 @@ import HTMLContent from "../components/Content";
 import PageHelmet from "../components/PageHelmet";
 import StandardPageTemplate from "../components/StandardPageTemplate";
 import "../styles/organizers-page.scss";
+import "../styles/generic.scss";
 import Img from "gatsby-image";
 import slug from "slug";
 
