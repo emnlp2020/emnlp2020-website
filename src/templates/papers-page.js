@@ -93,7 +93,7 @@ const PapersPage = ({data}) => {
   const byLength = getPapersByLength(data.groupedPapers.group)
   
   return (
-      <Layout footerData={footerData} navbarData={navbarData} secondaryNavData={secondaryNavData} site={site}>
+      <Layout {...{footerData, navbarData, secondaryNavData, site}}>
         <PageHelmet page={page}/>
         <StandardPageTemplate page={{...page}} className="papers-container">
           <HTMLContent className="default-content" content={page.html}/>
@@ -130,7 +130,7 @@ export const submissionsQuery = graphql`
       }
     }
     ...LayoutFragment
-    secondaryNavData: allMarkdownRemark(filter: { frontmatter: { forSection: { eq: "papers" } } }) {
+    secondaryNavData: allMarkdownRemark(filter: { frontmatter: { forSection: { eq: "program" } } }) {
       ...NavbarFieldsFragment
     }
   }
