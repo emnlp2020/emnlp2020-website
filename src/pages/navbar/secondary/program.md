@@ -8,11 +8,10 @@ menuItems:
     linkURL: /tutorials
   - label: keynotes
     linkURL: /keynotes
+  - label: findings papers
+    linkURL: /papers/findings
   - label: conference papers
     linkType: internal
     linkURL: /papers/main
-#  - label: findings
-#    linkURL: /papers/findings
-
 ---
 
