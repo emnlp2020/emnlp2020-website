@@ -28,7 +28,8 @@ const SearchBox = ({text, setText}) => {
 }
 
 const SinglePaperListing = ({paper}) => (
-    <li className="single-paper-wrapper" key={paper.id} id={slug(paper.title, {lower: true})}>
+    <li className="single-paper-wrapper" key={paper.submissionID} id={slug(paper.title, {lower: true})}
+      title={`${paper.title}: ${paper.abstract}`}>
       <article className="single-paper-listing">
         <span className="paper-title">{paper.title}. </span>
         <span className="paper-authors">{paper.authors}.</span>
@@ -122,8 +123,11 @@ export const submissionsQuery = graphql`
       group(field: submissionType) {
         edges {
           node {
+            submissionID
             authors
             title
+            abstract
+            track
           }
         }
         fieldValue
