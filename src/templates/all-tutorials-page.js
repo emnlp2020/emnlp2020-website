@@ -2,6 +2,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
+import slug from "slug"
 
 import Layout from "../components/Layout";
 import HTMLContent from "../components/Content";
@@ -9,10 +10,11 @@ import PageHelmet from "../components/PageHelmet";
 import StandardPageTemplate from "../components/StandardPageTemplate";
 import "../styles/all-events-page.scss";
 
-const TutorialListing = ({ title, authors, url }) => (
+const TutorialListing = ({ title, authors, abstract, extraMaterials }) => (
   <article className="event-listing">
     <h3>{title}</h3>
     <div className="event-organizers">{authors}</div>
+    <div className="event-abstract">{abstract}</div>
   </article>
 );
 
@@ -31,11 +33,31 @@ const AllTutorialsByDate = ({ datesAndTutorials }) => (
   </section>
 );
 
-const AllTutorialsPage = ({ data }) => {
-  const { markdownRemark: page, footerData, navbarData, site, allTutorialsCsv, secondaryNavData } = data;
-  const { tutorialsByDate } = allTutorialsCsv
-  const datesAndTutorials = tutorialsByDate.map(({tutorials}) => ({ date: tutorials[0].date, tutorials }))
+const simpleTitle = (raw) => slug(raw, {lower: true}).slice(0, 15)
 
+const AllTutorialsPage = ({ data }) => {
+  const { markdownRemark: page, footerData, navbarData, site, allTutorialsCsv, allTutorialDetailsCsv, secondaryNavData } = data;
+  const { tutorialsByDate } = allTutorialsCsv
+  const { allTutorialDetails } = allTutorialDetailsCsv
+  const tuteDetailsBySlug = Object.fromEntries(allTutorialDetails.map(({details}) => [simpleTitle(details.title), details]))
+  
+  const augmentWithDetails = ({authors, tutorialNumber, title}) => {
+    const {abstract, materials} = tuteDetailsBySlug[simpleTitle(title)]
+
+    return {
+      authors,
+      title,
+      tutorialNumber,
+      abstract,
+      materials
+    }
+  }
+  
+  const datesAndTutorials = tutorialsByDate.map(({tutorials}) => ({
+    date: tutorials[0].date,
+    tutorials: tutorials.map(augmentWithDetails)
+  }))
+  
   return (
     <Layout {...{footerData, navbarData, secondaryNavData, site}}>
       <PageHelmet page={page} />
@@ -53,7 +75,7 @@ AllTutorialsPage.propTypes = {
 
 export default AllTutorialsPage;
 
-export const allWorkshopsPageQuery = graphql`
+export const allTutorialsPageQuery = graphql`
   query TutorialsPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
@@ -73,6 +95,15 @@ export const allWorkshopsPageQuery = graphql`
           tutorialNumber
           title
           date(formatString: "MMMM D, YYYY")
+        }
+      }
+    }
+    allTutorialDetailsCsv {
+      allTutorialDetails: edges {
+        details: node {
+          title
+          abstract
+          materials
         }
       }
     }
