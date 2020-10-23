@@ -19,7 +19,7 @@ const BlogIndexContent = ({ posts }) => (
   <article className="blog-posts default-content">
     <h2>All Posts</h2> 
     <ul>
-      {posts.map(({ post }) => <BlogIndexListing post={post} />)}
+      {posts.map(({ post }) => <BlogIndexListing post={post} key={post.title}/>)}
     </ul>
     <RssIcon link="/blog/rss.xml"/>
   </article>
