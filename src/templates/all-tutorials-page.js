@@ -10,11 +10,16 @@ import PageHelmet from "../components/PageHelmet";
 import StandardPageTemplate from "../components/StandardPageTemplate";
 import "../styles/all-events-page.scss";
 
-const TutorialListing = ({ title, authors, abstract, extraMaterials }) => (
-  <article className="event-listing">
+const CourseMaterialsLink = ({link}) => (
+    <div className="event-materials"><a href={link}>Course Materials</a></div>
+)
+
+const TutorialListing = ({ tutorialNumber, title, authors, abstract, materials }) => (
+  <article className="event-listing" id={tutorialNumber}>
     <h3>{title}</h3>
     <div className="event-organizers">{authors}</div>
     <div className="event-abstract">{abstract}</div>
+    { materials ? <CourseMaterialsLink link={materials}/> : null}
   </article>
 );
 
