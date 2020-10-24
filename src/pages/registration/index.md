@@ -73,7 +73,7 @@ methods of payment, to [Pat Kirby](mailto:acl.PatKirby@gmail.com) 
 Please direct general questions about registration to [Priscilla
 Rasmussen of the ACL](mailto:acl.rasmussen@gmail.com)
 
-## Virtual Conference Cancellation Policy**
+## Virtual Conference Cancellation Policy
 
 For cancellations received up to two weeks prior to the conference,
 registration fees will be reimbursed; ACL membership (if paid as part of
