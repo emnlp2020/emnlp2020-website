@@ -78,3 +78,17 @@ Rasmussen of the ACL](mailto:acl.rasmussen@gmail.com)
 For cancellations received up to two weeks prior to the conference,
 registration fees will be reimbursed; ACL membership (if paid as part of
 the registration) is not reimbursable.
+
+## Ethics 
+
+By registering, participants acknowledge and agree to follow the [ACL's 
+code of ethics](https://www.aclweb.org/portal/content/acl-code-ethics)
+and the [ACL's anti-harassment 
+policy](https://www.aclweb.org/adminwiki/index.php?title=Anti-Harassment_Policy). 
+Violations of the code of ethics as well as complaints raised under the 
+anti-harassment policy should be brought to the [Professional Conduct 
+Committee](https://www.aclweb.org/adminwiki/index.php?title=Professional_Conduct_Committee),
+who can be reached during the conference via the PCC channel in  
+RocketChat. Please be assured that if you approach the PCC, your 
+concerns will be kept in strict confidence, and we will consult with you 
+on any actions taken.
