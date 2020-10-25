@@ -25,9 +25,9 @@ const Session = ({sessionName, subsessions}) => (
 const ScheduleLine = ({startMoment, endMoment, parallelSessions}) => (
     <tr className="session-row">
       <td className="session-time">
-        <div className="date">{startMoment.format("MMM Do")}</div>
-        <div className="time">{startMoment.format("HH:mm")}</div>
-        <div className="zone">[UTC]</div>
+        <div className="date">{startMoment.local().format("MMM Do")}</div>
+        <div className="time">{startMoment.local().format("HH:mm")}</div>
+        <div className="zone">[UTC{startMoment.local().format("Z")}]</div>
       </td>
       <td className="session">
         {parallelSessions.map(ps => <Session {...ps} key={ps.sessionNumber}/>)}

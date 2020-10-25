@@ -7,3 +7,5 @@ seo:
     Schedule at EMNLP 2020
   title: Schedule | EMNLP 2020
 ---
+
+Times are displayed in your local timezone.
