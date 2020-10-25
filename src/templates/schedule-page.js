@@ -16,10 +16,10 @@ const Subsession = ({paperID, paperTitle, paperAuthors}) => (
 )
 
 const Session = ({sessionName, subsessions}) => (
-  <div className="session-cell">
-    <h4 className="session-name">{sessionName}</h4>
-    <ul className="session-subsessions">{subsessions.map(ss => <Subsession {...ss} key={ss.paperID} />)}</ul>
-  </div>
+    <div className="session-cell">
+      <h4 className="session-name">{sessionName}</h4>
+      <ul className="session-subsessions">{subsessions.map(ss => <Subsession {...ss} key={ss.paperID}/>)}</ul>
+    </div>
 )
 
 const ScheduleLine = ({startMoment, endMoment, parallelSessions}) => (
@@ -30,15 +30,15 @@ const ScheduleLine = ({startMoment, endMoment, parallelSessions}) => (
         <div className="zone">[UTC]</div>
       </td>
       <td className="session">
-        {parallelSessions.map(ps => <Session {...ps} key={ps.sessionNumber} />)}
+        {parallelSessions.map(ps => <Session {...ps} key={ps.sessionNumber}/>)}
       </td>
     </tr>
 )
 
 const ConferenceSchedule = ({allSessionInfo}) => (
-  <table className="conference-schedule">
-    {allSessionInfo.map(asi => <ScheduleLine {...asi} key={asi.startMoment.toISOString()} />)}
-  </table>
+    <table className="conference-schedule">
+      {allSessionInfo.map(asi => <ScheduleLine {...asi} key={asi.startMoment.toISOString()}/>)}
+    </table>
 )
 
 const parseDateAndTime = (date, time) => {
@@ -73,18 +73,18 @@ const sessionInfoFromGql = (allSessionGroups) => {
   return sessions
 }
 
-const SchedulePage = ({ data }) => {
-  const { markdownRemark: page, footerData, navbarData, secondaryNavData, site, allScheduleCsv } = data;
-  const { allSessionGroups } = allScheduleCsv
-
+const SchedulePage = ({data}) => {
+  const {markdownRemark: page, footerData, navbarData, secondaryNavData, site, allScheduleCsv} = data;
+  const {allSessionGroups} = allScheduleCsv
+  
   return (
-    <Layout {...{footerData, navbarData, secondaryNavData, site}}>
-    <PageHelmet page={page} />
-      <StandardPageTemplate page={{ ...page }}>
-        <HTMLContent className="default-content" content={page.html} />
-        <ConferenceSchedule allSessionInfo={sessionInfoFromGql(allSessionGroups)}/>
-      </StandardPageTemplate>
-    </Layout>
+      <Layout {...{footerData, navbarData, secondaryNavData, site}}>
+        <PageHelmet page={page}/>
+        <StandardPageTemplate page={{...page}}>
+          <HTMLContent className="default-content" content={page.html}/>
+          <ConferenceSchedule allSessionInfo={sessionInfoFromGql(allSessionGroups)}/>
+        </StandardPageTemplate>
+      </Layout>
   );
 };
 
