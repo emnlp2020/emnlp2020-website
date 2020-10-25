@@ -1,0 +1,43 @@
+.session-name {
+  font-weight: bold;
+  margin-right: 1rem;
+  padding-right: 0;
+}
+
+.session-time {
+  width: 8rem;
+
+  .zone {
+    color: gray;
+    font-size: 0.8rem;
+  }
+}
+
+.session {
+  font-size: 0.8rem;
+  vertical-align: top;
+}
+
+ul.session-subsessions {
+  padding: 0;
+  margin: 0 0 5px 0;
+
+  li {
+    display: inline;
+  }
+
+  li + li:before {
+    content: " • "
+  }
+}
+
+.session-time {
+  vertical-align: top;
+}
+
+.session-row {
+  border-top: 1px solid lightgray;
+  td {
+    padding: 5px;
+  }
+}
