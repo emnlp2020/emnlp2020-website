@@ -9,4 +9,5 @@ seo:
 ---
 
 Times are displayed in your local timezone. This is a preliminary schedule and subject to change. 
-Search by author and title is available on the [accepted paper listing](/papers/main).
+Search by author and title is available on the [accepted paper listing](/papers/main). For presenters, more detail will
+follow soon about the formats of the presentations.
