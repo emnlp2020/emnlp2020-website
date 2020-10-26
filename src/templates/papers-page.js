@@ -7,6 +7,8 @@ import PageHelmet from "../components/PageHelmet";
 import HTMLContent from "../components/Content";
 import "../styles/papers-page.scss";
 import { domIdForPaper } from "./shared";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCalendarDay } from '@fortawesome/free-solid-svg-icons'
 
 const lengths = {
   "Long Paper": "Long Papers",
@@ -29,7 +31,9 @@ const SearchBox = ({text, setText}) => {
 }
 
 const ScheduleLink = ({paper}) => (
-    <a className="schedule-link" href={`/schedule#${domIdForPaper(paper.submissionID)}`}>Schedule</a>
+    <a className="schedule-link" href={`/schedule#${domIdForPaper(paper.submissionID)}`}>
+      <FontAwesomeIcon icon={faCalendarDay} />
+    </a>
 )
 
 const SinglePaperListing = ({paper, linkToSchedule}) => (
