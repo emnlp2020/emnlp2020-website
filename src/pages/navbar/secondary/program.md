@@ -2,6 +2,8 @@
 templateKey: navbar
 forSection: program
 menuItems:
+  - label: schedule
+    linkURL: /schedule
   - label: workshops
     linkURL: /workshops
   - label: tutorials

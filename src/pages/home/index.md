@@ -10,6 +10,8 @@ seo:
     The 2020 Conference on Empirical Methods in Natural Language Processing
   title: EMNLP 2020
 newsItems:
+  - date: 2020-10-23
+    text: "The [schedule of sessions](/schedule) is available."
   - date: 2020-10-13
     text: "The [keynote speakers](/keynotes) have been announced."
   - date: 2020-10-04

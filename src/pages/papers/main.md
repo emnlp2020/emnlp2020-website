@@ -4,6 +4,7 @@ title: Main Conference Accepted Papers
 description: Papers accepted for presentation at EMNLP 2020
 acceptanceStatusKey: "Accept"
 section: "program"
+linkToSchedule: true
 seo:
   browserTitle: Main Conference Papers – EMNLP 2020
   description: >-
