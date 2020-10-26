@@ -22,9 +22,9 @@ const SearchBox = ({text, setText}) => {
             aria-roledescription="search papers"
             type="search"
             value={text}
-            placeholder="Filter by author or title"
+            placeholder="Author, title or ID filter"
             onChange={(event) => setText(event.target.value)}
-            size="25"
+            size="30"
         />
       </div>
   )
@@ -32,13 +32,13 @@ const SearchBox = ({text, setText}) => {
 
 const ScheduleLink = ({paper}) => (
     <a className="schedule-link" href={`/schedule#${domIdForPaper(paper.submissionID)}`}>
-      <FontAwesomeIcon icon={faCalendarDay} />
+      <FontAwesomeIcon icon={faCalendarDay}/>
     </a>
 )
 
 const SinglePaperListing = ({paper, linkToSchedule}) => (
     <li className="single-paper-wrapper" key={paper.submissionID} id={slug(paper.title, {lower: true})}
-      title={`${paper.title}: ${paper.abstract}`}>
+        title={`${paper.title}: ${paper.abstract}`}>
       <article className="single-paper-listing">
         {linkToSchedule ? <ScheduleLink paper={paper}/> : null}
         <span className="paper-title">{paper.title}. </span>
@@ -68,7 +68,7 @@ class PaperSearcher {
 const VenuePaperListing = ({papers, length, searchText, linkToSchedule}) => {
   const searcher = new PaperSearcher(searchText)
   
-  if (searchText.length > 3) {
+  if (searchText.length > 3 || searchText.match(/^\d+$/)) {
     papers = papers.filter(p => searcher.matchesPaper(p))
   }
   
@@ -87,11 +87,12 @@ const VenuePaperListing = ({papers, length, searchText, linkToSchedule}) => {
 
 const AllPaperListing = ({papersByLength, linkToSchedule}) => {
   const [searchText, setSearchText] = useState("");
-
+  
   return (
       <>
         <SearchBox text={searchText} setText={setSearchText}/>
-        {papersByLength.map(({papers, length}) => <VenuePaperListing {...{papers, length, searchText, linkToSchedule}}/>)}
+        {papersByLength.map(
+            ({papers, length}) => <VenuePaperListing {...{papers, length, searchText, linkToSchedule}}/>)}
       </>
   );
 }
@@ -111,7 +112,7 @@ const PapersPage = ({data}) => {
         <PageHelmet page={page}/>
         <StandardPageTemplate page={{...page}} className="papers-container">
           <HTMLContent className="default-content" content={page.html}/>
-          <AllPaperListing papersByLength={byLength} linkToSchedule={linkToSchedule} />
+          <AllPaperListing papersByLength={byLength} linkToSchedule={linkToSchedule}/>
         </StandardPageTemplate>
       </Layout>
   );
