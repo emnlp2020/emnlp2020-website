@@ -8,4 +8,4 @@ seo:
   title: Schedule | EMNLP 2020
 ---
 
-Times are displayed in your local timezone.
+Times are displayed in your local timezone. This is a preliminary schedule and subject to change.

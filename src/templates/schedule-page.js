@@ -8,11 +8,12 @@ import StandardPageTemplate from "../components/StandardPageTemplate";
 import "../styles/generic.scss";
 import "../styles/schedule-page.scss";
 import moment from "moment";
+import { domIdForPaper } from "./shared";
 
 const scheduleTimeOffset = '-04:00'
 
 const Subsession = ({paperID, paperTitle, paperAuthors}) => (
-    <li className="paper-title" title={`${paperID}: ${paperAuthors}. ${paperTitle}`}>{paperTitle}</li>
+    <li className="paper-title" id={domIdForPaper(paperID)} title={`${paperID}: ${paperAuthors}. ${paperTitle}`}>{paperTitle}</li>
 )
 
 const Session = ({sessionName, subsessions}) => (

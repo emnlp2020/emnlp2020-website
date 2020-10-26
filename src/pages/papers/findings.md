@@ -4,6 +4,7 @@ section: papers
 title: Findings Accepted Papers
 description: "Papers accepted for publication in Findings of ACL: EMNLP 2020"
 acceptanceStatusKey: "Accept-Findings"
+linkToSchedule: false
 seo:
   browserTitle: "Papers – Findings of ACL: EMNLP 2020"
   description: >-
