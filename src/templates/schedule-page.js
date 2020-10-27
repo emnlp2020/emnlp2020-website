@@ -16,9 +16,9 @@ const Subsession = ({paperID, paperTitle, paperAuthors}) => (
     <li className="paper-title" id={domIdForPaper(paperID)} title={`${paperID}: ${paperAuthors}. ${paperTitle}`}>{paperTitle}</li>
 )
 
-const Session = ({sessionName, subsessions}) => (
+const Session = ({sessionDisplayName, subsessions}) => (
     <div className="session-cell">
-      <h4 className="session-name">{sessionName}</h4>
+      <h4 className="session-name">{sessionDisplayName}</h4>
       <ul className="session-subsessions">{subsessions.map(ss => <Subsession {...ss} key={ss.paperID}/>)}</ul>
     </div>
 )
@@ -29,6 +29,7 @@ const ScheduleLine = ({startMoment, endMoment, parallelSessions}) => (
         <div className="date">{startMoment.local().format("MMM Do")}</div>
         <div className="time">{startMoment.local().format("HH:mm")}</div>
         <div className="zone">[UTC{startMoment.local().format("Z")}]</div>
+        <div className="duration">{endMoment.diff(startMoment, 'minutes')} minutes</div>
       </td>
       <td className="session">
         {parallelSessions.map(ps => <Session {...ps} key={ps.sessionNumber}/>)}
@@ -50,24 +51,25 @@ const parseDateAndTime = (date, time) => {
 const normalizeSession = (singleSessionGroupGql) => {
   const {groupNodes} = singleSessionGroupGql
   const sessionProto = groupNodes[0]
-  const {startTime, endTime, date, sessionNumber, sessionName} = sessionProto
+  const {startTime, endTime, date, sessionNumber, sessionName, sessionLongName} = sessionProto
   const startMoment = parseDateAndTime(date, startTime)
   const endMoment = parseDateAndTime(date, endTime)
   const subsessions = groupNodes.map(({paperID, paperTitle, paperAuthors}) => ({paperID, paperTitle, paperAuthors}))
-  return {startMoment, endMoment, subsessions, sessionNumber, sessionName}
+  const sessionDisplayName = sessionLongName || sessionName;
+  return {startMoment, endMoment, subsessions, sessionNumber, sessionDisplayName}
 }
 
 const sessionInfoFromGql = (allSessionGroups) => {
   const normalizedSessions = allSessionGroups.map(normalizeSession)
   const byStartTime = {}
   normalizedSessions.forEach(ses => {
-    const {startMoment, endMoment, subsessions, sessionNumber, sessionName} = ses
+    const {startMoment, endMoment, subsessions, sessionNumber, sessionDisplayName} = ses
     const timeKey = ses.startMoment.toISOString();
     const existing = byStartTime[timeKey];
     if (existing === undefined) {
       byStartTime[timeKey] = {startMoment, endMoment, parallelSessions: []}
     }
-    byStartTime[timeKey].parallelSessions.push({subsessions, sessionNumber, sessionName})
+    byStartTime[timeKey].parallelSessions.push({subsessions, sessionNumber, sessionDisplayName});
   })
   const sessions = Object.values(byStartTime)
   sessions.sort((ses1, ses2) => ses1.startMoment.unix() - ses2.startMoment.unix())
@@ -112,6 +114,7 @@ export const schedulePageQuery = graphql`
           date
           format
           sessionName
+          sessionLongName
           sessionNumber
           paperID
           paperTitle
