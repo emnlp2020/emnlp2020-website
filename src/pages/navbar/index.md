@@ -9,7 +9,7 @@ menuItems:
   - label: calls
     linkURL: /call-for-papers
   - label: program
-    linkURL: /papers/main
+    linkURL: /schedule
   - label: organizers
     linkURL: /organizers
   - label: sponsors
