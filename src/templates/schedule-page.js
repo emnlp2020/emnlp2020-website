@@ -10,8 +10,6 @@ import "../styles/schedule-page.scss";
 import moment from "moment";
 import { domIdForPaper } from "./shared";
 
-const scheduleTimeOffset = '-04:00'
-
 const Subsession = ({paperID, paperTitle, paperAuthors}) => (
     <li className="paper-title" id={domIdForPaper(paperID)} title={`${paperID}: ${paperAuthors}. ${paperTitle}`}>{paperTitle}</li>
 )
@@ -43,17 +41,14 @@ const ConferenceSchedule = ({allSessionInfo}) => (
     </table>
 )
 
-const parseDateAndTime = (date, time) => {
-  const parsedMoment = moment.utc(`${date}T${time}:00${scheduleTimeOffset}`)
-  return (time === '00:00') ? parsedMoment.add(24, 'hours') : parsedMoment
-}
+const parseUtcTime = (utcTime) => moment.utc(utcTime, 'DD/MM/YYYY HH:mm:ss')
 
 const normalizeSession = (singleSessionGroupGql) => {
   const {groupNodes} = singleSessionGroupGql
   const sessionProto = groupNodes[0]
-  const {startTime, endTime, date, sessionNumber, sessionName, sessionLongName} = sessionProto
-  const startMoment = parseDateAndTime(date, startTime)
-  const endMoment = parseDateAndTime(date, endTime)
+  const {startUtc, endUtc, sessionNumber, sessionName, sessionLongName} = sessionProto
+  const startMoment = parseUtcTime(startUtc)
+  const endMoment = parseUtcTime(endUtc)
   const subsessions = groupNodes.map(({paperID, paperTitle, paperAuthors}) => ({paperID, paperTitle, paperAuthors}))
   const sessionDisplayName = sessionLongName || sessionName;
   return {startMoment, endMoment, subsessions, sessionNumber, sessionDisplayName}
@@ -109,9 +104,8 @@ export const schedulePageQuery = graphql`
     allScheduleCsv {
       allSessionGroups: group(field: sessionName) {
         groupNodes: nodes {
-          startTime
-          endTime
-          date
+          startUtc
+          endUtc
           format
           sessionName
           sessionLongName
