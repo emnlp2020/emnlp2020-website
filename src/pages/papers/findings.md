@@ -5,6 +5,7 @@ title: Findings Accepted Papers
 description: "Papers accepted for publication in Findings of ACL: EMNLP 2020"
 acceptanceStatusKey: "Accept-Findings"
 linkToSchedule: false
+summarySuffix: "*[Findings of ACL: EMNLP 2020](/blog/2020-04-19-findings-of-emnlp.md)*"
 seo:
   browserTitle: "Papers – Findings of ACL: EMNLP 2020"
   description: >-
@@ -12,4 +13,3 @@ seo:
   title: "Accepted Papers – Findings of ACL: EMNLP 2020"
 ---
 
-There were **342 [long papers](#long-papers)** and **116 [short papers](#short-papers)** accepted to *[Findings of ACL: EMNLP 2020](/blog/2020-04-19-findings-of-emnlp.md)*.

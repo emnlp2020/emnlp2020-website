@@ -1,14 +1,14 @@
-import { graphql } from 'gatsby'
 import slug from 'slug'
-import StandardPageTemplate from "../components/StandardPageTemplate";
 import React, { useState } from "react";
-import Layout from "../components/Layout";
-import PageHelmet from "../components/PageHelmet";
-import HTMLContent from "../components/Content";
 import "../styles/papers-page.scss";
 import { domIdForPaper } from "./shared";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalendarDay } from '@fortawesome/free-solid-svg-icons'
+import Layout from "../components/Layout";
+import PageHelmet from "../components/PageHelmet";
+import StandardPageTemplate from "../components/StandardPageTemplate";
+import HTMLContent from "../components/Content";
+import ReactMarkdown from "react-markdown";
 
 const lengths = {
   "Long Paper": "Long Papers",
@@ -65,6 +65,8 @@ class PaperSearcher {
   }
 }
 
+const idForLength = (length) => slug(length, {lower: true});
+
 const VenuePaperListing = ({papers, length, searchText, linkToSchedule}) => {
   const searcher = new PaperSearcher(searchText)
   
@@ -77,7 +79,7 @@ const VenuePaperListing = ({papers, length, searchText, linkToSchedule}) => {
   
   return (
       <section className="track-paper-listing">
-        <h3 className="track-name" id={slug(length, {lower: true})}>{length}</h3>
+        <h3 className="track-name" id={idForLength(length)}>{length}</h3>
         <ul className="papers-in-track">
           {papers.map(p => <SinglePaperListing paper={p} key={p.submissionID} linkToSchedule={linkToSchedule}/>)}
         </ul>
@@ -85,11 +87,36 @@ const VenuePaperListing = ({papers, length, searchText, linkToSchedule}) => {
   );
 };
 
-const AllPaperListing = ({papersByLength, linkToSchedule}) => {
+const LengthSummary = ({count, length}) => (
+  <>
+    {' '}
+    <a className="paper-length-summary" href={`#${idForLength(length)}`}>{`${count} ${length}`}</a>
+    {' '}
+  </>
+)
+
+const OverallSummary = ({papersByLength, summarySuffix}) => {
+  const counts = {}
+  papersByLength.forEach(({papers, length}) => {counts[length] = papers.length})
+  return (
+      <article className="summary">
+        There were
+        <LengthSummary count={counts["Long Papers"]} length="Long Papers"/>
+        and
+        <LengthSummary count={counts["Short Papers"]} length="Short Papers"/>
+        accepted to {' '}
+        {<ReactMarkdown renderers={{paragraph: 'span'}}>{summarySuffix}</ReactMarkdown>}
+      </article>
+  )
+}
+
+
+const AllPaperListing = ({papersByLength, linkToSchedule, summarySuffix}) => {
   const [searchText, setSearchText] = useState("");
   
   return (
       <>
+        <OverallSummary papersByLength={papersByLength} summarySuffix={summarySuffix} />
         <SearchBox text={searchText} setText={setSearchText}/>
         {papersByLength.map(
             ({papers, length}) => <VenuePaperListing {...{papers, length, searchText, linkToSchedule}}/>)}
@@ -104,7 +131,7 @@ function getPapersByLength(byLengthFromGql) {
 
 const PapersPage = ({data}) => {
   const {footerData, navbarData, site, markdownRemark: page, secondaryNavData} = data;
-  const {linkToSchedule} = page.frontmatter;
+  const {linkToSchedule, summarySuffix} = page.frontmatter;
   const byLength = getPapersByLength(data.groupedPapers.group)
   
   return (
@@ -112,7 +139,7 @@ const PapersPage = ({data}) => {
         <PageHelmet page={page}/>
         <StandardPageTemplate page={{...page}} className="papers-container">
           <HTMLContent className="default-content" content={page.html}/>
-          <AllPaperListing papersByLength={byLength} linkToSchedule={linkToSchedule}/>
+          <AllPaperListing papersByLength={byLength} linkToSchedule={linkToSchedule} summarySuffix={summarySuffix} />
         </StandardPageTemplate>
       </Layout>
   );
@@ -132,6 +159,7 @@ export const submissionsQuery = graphql`
           description
         }
         linkToSchedule
+        summarySuffix
       }
     }
     groupedPapers: allPapersCsv(filter: { acceptanceStatus: { eq: $acceptanceStatusKey }}) {
