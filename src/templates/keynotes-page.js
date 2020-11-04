@@ -37,14 +37,14 @@ const AllKeynotes = ({ keynotes, images }) => (
   </section>
 );
 
-const KeynotesPage = ({ data }) => {
+const KeynotesPage = ({ data, location }) => {
   const { markdownRemark: page, footerData, navbarData, site, keynoteData, keynoteImages, secondaryNavData } = data;
   const { keynotes } = keynoteData;
   const { images } = keynoteImages;
   const imagesByName = new Map(images.map(({ name, sharpImageData }) => [name, sharpImageData]));
 
   return (
-    <Layout {...{footerData, navbarData, secondaryNavData, site}}>
+    <Layout {...{footerData, navbarData, secondaryNavData, site, location}}>
     <PageHelmet page={page} />
       <StandardPageTemplate page={{ ...page }}>
         <HTMLContent className="default-content" content={page.html} />

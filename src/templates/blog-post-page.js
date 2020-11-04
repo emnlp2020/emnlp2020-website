@@ -8,12 +8,12 @@ import PageHelmet from "../components/PageHelmet";
 import "../styles/default-page.scss";
 import BlogPageTemplate from "../components/BlogPageTemplate";
 
-const BlogPage = ({ data }) => {
+const BlogPage = ({ data, location }) => {
   const { markdownRemark: page, footerData, navbarData, site } = data;
   const { organizers: _ } = page.frontmatter;
 
   return (
-    <Layout footerData={footerData} navbarData={navbarData} site={site}>
+    <Layout footerData={footerData} navbarData={navbarData} site={site} location={location}>
       <PageHelmet page={page} />
       <BlogPageTemplate page={{ ...page }}>
         <HTMLContent className="default-content" content={page.html} />

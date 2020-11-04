@@ -9,6 +9,7 @@ import PageHelmet from "../components/PageHelmet";
 import StandardPageTemplate from "../components/StandardPageTemplate";
 import HTMLContent from "../components/Content";
 import ReactMarkdown from "react-markdown";
+import { graphql } from "gatsby";
 
 const lengths = {
   "Long Paper": "Long Papers",
@@ -129,13 +130,13 @@ function getPapersByLength(byLengthFromGql) {
       ({papers: paperNodes.map(pn => pn.node), length: lengths[length]}))
 }
 
-const PapersPage = ({data}) => {
+const PapersPage = ({data, location}) => {
   const {footerData, navbarData, site, markdownRemark: page, secondaryNavData} = data;
   const {linkToSchedule, summarySuffix} = page.frontmatter;
   const byLength = getPapersByLength(data.groupedPapers.group)
   
   return (
-      <Layout {...{footerData, navbarData, secondaryNavData, site}}>
+      <Layout {...{footerData, navbarData, secondaryNavData, site, location}}>
         <PageHelmet page={page}/>
         <StandardPageTemplate page={{...page}} className="papers-container">
           <HTMLContent className="default-content" content={page.html}/>

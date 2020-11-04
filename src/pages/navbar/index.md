@@ -10,6 +10,11 @@ menuItems:
     linkURL: /call-for-papers
   - label: program
     linkURL: /schedule
+    otherPatterns:
+      - "/papers/.*"
+      - /tutorials
+      - /workshops
+      - /keynotes
   - label: organizers
     linkURL: /organizers
   - label: sponsors

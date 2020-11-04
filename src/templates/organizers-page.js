@@ -53,14 +53,14 @@ const SubCommitteeLink = ({title, link}) => (
   <a class="subcommittee-link" href={link}>{title}</a>
 )
 
-const OrgCommitteePage = ({ data }) => {
+const OrgCommitteePage = ({ data, location }) => {
   const { markdownRemark: page, footerData, navbarData, site, committee, committeeImages } = data;
   const { roles } = committee;
   const { images } = committeeImages;
   const imagesByName = new Map(images.map(({ name, sharpImageData }) => [name, sharpImageData]));
 
   return (
-    <Layout footerData={footerData} navbarData={navbarData} site={site}>
+    <Layout footerData={footerData} navbarData={navbarData} site={site} location={location}>
       <PageHelmet page={page} />
       <StandardPageTemplate page={{ ...page }}>
         <HTMLContent className="default-content" content={page.html} />

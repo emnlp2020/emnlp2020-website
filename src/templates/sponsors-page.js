@@ -42,14 +42,14 @@ const CategorySponsorListing = ({ levels, images }) => (
   </section>
 );
 
-const SponsorsPage = ({ data }) => {
+const SponsorsPage = ({ data, location }) => {
   const { markdownRemark: page, footerData, navbarData, site, levelSponsors, sponsorImages } = data;
   const { levels } = levelSponsors;
   const { images } = sponsorImages;
   const imagesByName = new Map(images.map(({ name, sharpImageData }) => [name, sharpImageData]));
 
   return (
-    <Layout footerData={footerData} navbarData={navbarData} site={site}>
+    <Layout footerData={footerData} navbarData={navbarData} site={site} location={location}>
       <PageHelmet page={page} />
       <StandardPageTemplate page={{ ...page }}>
         <HTMLContent className="default-content" content={page.html} />

@@ -6,13 +6,13 @@ import "../styles";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 
-const TemplateWrapper = ({ footerData = null, navbarData = null, site = null, secondaryNavData = null, children }) => (
+const TemplateWrapper = ({ footerData = null, navbarData = null, site = null, secondaryNavData = null, children, location }) => (
   <div>
     <Helmet>
       <html lang="en" />
       <meta name="keywords" content="conference nlp natural language processing emnlp 2020 acl" />
     </Helmet>
-    <Navbar data={navbarData} />
+    <Navbar data={navbarData} location={location} />
     <main>
       {secondaryNavData ? <div id="secondary-nav" className="secondary"><Navbar data={secondaryNavData} /></div> : null}
       {children}

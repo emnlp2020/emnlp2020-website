@@ -60,7 +60,7 @@ const AllTutorialsByDate = ({datesAndTutorials, images}) => (
 
 const simpleTitle = (raw) => slug(raw, {lower: true}).slice(0, 15)
 
-const AllTutorialsPage = ({data}) => {
+const AllTutorialsPage = ({data, location}) => {
   const {
     markdownRemark: page,
     footerData,
@@ -97,7 +97,7 @@ const AllTutorialsPage = ({data}) => {
   }))
   
   return (
-      <Layout {...{footerData, navbarData, secondaryNavData, site}}>
+      <Layout {...{footerData, navbarData, secondaryNavData, site, location}}>
         <PageHelmet page={page}/>
         <StandardPageTemplate page={{...page}}>
           <HTMLContent className="default-content" content={page.html}/>

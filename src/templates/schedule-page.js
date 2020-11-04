@@ -104,12 +104,12 @@ const sessionInfoFromGql = (allSessionGroups) => {
   return sessions
 }
 
-const SchedulePage = ({data}) => {
+const SchedulePage = ({data, location}) => {
   const {markdownRemark: page, footerData, navbarData, secondaryNavData, site, allScheduleCsv} = data;
   const {allSessionGroups} = allScheduleCsv
   
   return (
-      <Layout {...{footerData, navbarData, secondaryNavData, site}}>
+      <Layout {...{footerData, navbarData, secondaryNavData, site, location}}>
         <PageHelmet page={page}/>
         <StandardPageTemplate page={{...page}}>
           <HTMLContent className="default-content" content={page.html}/>
