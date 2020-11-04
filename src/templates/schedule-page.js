@@ -12,19 +12,29 @@ import { domIdForPaper } from "./shared";
 
 const localOffset = moment().format("Z");
 
-const Subsession = ({paperID, paperTitle, paperAuthors}) => (
-    <li className="paper-title" id={domIdForPaper(paperID)}
-        title={`${paperID}: ${paperAuthors}. ${paperTitle}`}>{paperTitle}</li>
+const Subsession = ({paperID, paperTitle, paperAuthors, highlight}) => (
+    <li
+        className={`paper-title`}
+        id={domIdForPaper(paperID)}
+        title={`${paperID}: ${paperAuthors}. ${paperTitle}`}
+    >
+      <span className={highlight ? "highlight" : ""}>
+        {paperTitle}
+      </span>
+    </li>
 )
 
-const Session = ({sessionDisplayName, subsessions}) => (
+const Session = ({sessionDisplayName, subsessions, highlightId}) => (
     <article className="session-cell">
       <h4 className="session-name">{sessionDisplayName}</h4>
-      <ul className="session-subsessions">{subsessions.map(ss => <Subsession {...ss} key={ss.paperID}/>)}</ul>
+      <ul className="session-subsessions">{subsessions.map(ss =>
+          <Subsession {...ss} key={ss.paperID} highlight={domIdForPaper(ss.paperID) === highlightId}/>)
+      }
+      </ul>
     </article>
 )
 
-const ScheduleLine = ({startMoment, endMoment, parallelSessions, tzName}) => {
+const ScheduleLine = ({startMoment, endMoment, parallelSessions, tzName, highlightId}) => {
   const isLocal = tzName === "local"
   const startTimeInZone = isLocal ? startMoment.local() : startMoment.utc()
   const offset = isLocal ? localOffset : "";
@@ -37,7 +47,7 @@ const ScheduleLine = ({startMoment, endMoment, parallelSessions, tzName}) => {
           <div className="duration">{endMoment.diff(startMoment, 'minutes')} minutes</div>
         </td>
         <td className="session">
-          {parallelSessions.map(ps => <Session {...ps} key={ps.sessionNumber}/>)}
+          {parallelSessions.map(ps => <Session {...ps} key={ps.sessionNumber} highlightId={highlightId}/>)}
         </td>
       </tr>
   );
@@ -57,7 +67,7 @@ const TimezoneChooser = ({tz, setTz}) => {
   );
 }
 
-const ConferenceSchedule = ({allSessionInfo}) => {
+const ConferenceSchedule = ({allSessionInfo, highlightId}) => {
   const [tz, setTz] = useState("local");
   
   return (
@@ -67,7 +77,7 @@ const ConferenceSchedule = ({allSessionInfo}) => {
           <thead>
           </thead>
           <tbody>
-          {allSessionInfo.map(asi => <ScheduleLine {...asi} key={asi.startMoment.toISOString()} tzName={tz}/>)}
+          {allSessionInfo.map(asi => <ScheduleLine {...asi} key={asi.startMoment.toISOString()} tzName={tz} highlightId={highlightId} />)}
           </tbody>
         </table>
       </>
@@ -113,7 +123,7 @@ const SchedulePage = ({data, location}) => {
         <PageHelmet page={page}/>
         <StandardPageTemplate page={{...page}}>
           <HTMLContent className="default-content" content={page.html}/>
-          <ConferenceSchedule allSessionInfo={sessionInfoFromGql(allSessionGroups)}/>
+          <ConferenceSchedule allSessionInfo={sessionInfoFromGql(allSessionGroups)} highlightId={location.state.highlightId || null} />
         </StandardPageTemplate>
       </Layout>
   );

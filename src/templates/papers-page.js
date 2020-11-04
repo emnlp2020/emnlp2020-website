@@ -9,7 +9,7 @@ import PageHelmet from "../components/PageHelmet";
 import StandardPageTemplate from "../components/StandardPageTemplate";
 import HTMLContent from "../components/Content";
 import ReactMarkdown from "react-markdown";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 
 const lengths = {
   "Long Paper": "Long Papers",
@@ -32,9 +32,13 @@ const SearchBox = ({text, setText}) => {
 }
 
 const ScheduleLink = ({paper}) => (
-    <a className="schedule-link" href={`/schedule#${domIdForPaper(paper.submissionID)}`}>
+    <Link
+        className="schedule-link"
+        to={`/schedule#${domIdForPaper(paper.submissionID)}`}
+        state={{highlightId: domIdForPaper(paper.submissionID)}}
+    >
       <FontAwesomeIcon icon={faCalendarDay}/>
-    </a>
+    </Link>
 )
 
 const SinglePaperListing = ({paper, linkToSchedule}) => (
