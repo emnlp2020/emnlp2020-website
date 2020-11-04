@@ -52,8 +52,7 @@
   "main": "n/a",
   "scripts": {
     "start": "npm run develop",
-    "clean": "rm -rf public",
-    "clobber": "rm -rf .cache public",
+    "clean": "rm -rf .cache public",
     "build": "npm run clean && gatsby build",
     "develop": "npm run clean && gatsby develop",
     "serve": "gatsby serve",
