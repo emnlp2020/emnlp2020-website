@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { graphql } from "gatsby";
 
 import Layout from "../components/Layout";
@@ -10,36 +10,69 @@ import "../styles/schedule-page.scss";
 import moment from "moment";
 import { domIdForPaper } from "./shared";
 
+const localOffset = moment().format("Z");
+
 const Subsession = ({paperID, paperTitle, paperAuthors}) => (
-    <li className="paper-title" id={domIdForPaper(paperID)} title={`${paperID}: ${paperAuthors}. ${paperTitle}`}>{paperTitle}</li>
+    <li className="paper-title" id={domIdForPaper(paperID)}
+        title={`${paperID}: ${paperAuthors}. ${paperTitle}`}>{paperTitle}</li>
 )
 
 const Session = ({sessionDisplayName, subsessions}) => (
-    <div className="session-cell">
+    <article className="session-cell">
       <h4 className="session-name">{sessionDisplayName}</h4>
       <ul className="session-subsessions">{subsessions.map(ss => <Subsession {...ss} key={ss.paperID}/>)}</ul>
-    </div>
+    </article>
 )
 
-const ScheduleLine = ({startMoment, endMoment, parallelSessions}) => (
-    <tr className="session-row">
-      <td className="session-time">
-        <div className="date">{startMoment.local().format("MMM Do")}</div>
-        <div className="time">{startMoment.local().format("HH:mm")}</div>
-        <div className="zone">[UTC{startMoment.local().format("Z")}]</div>
-        <div className="duration">{endMoment.diff(startMoment, 'minutes')} minutes</div>
-      </td>
-      <td className="session">
-        {parallelSessions.map(ps => <Session {...ps} key={ps.sessionNumber}/>)}
-      </td>
-    </tr>
-)
+const ScheduleLine = ({startMoment, endMoment, parallelSessions, tzName}) => {
+  const isLocal = tzName === "local"
+  const startTimeInZone = isLocal ? startMoment.local() : startMoment.utc()
+  const offset = isLocal ? localOffset : "";
+  return (
+      <tr className="session-row">
+        <td className="session-time">
+          <div className="date">{startTimeInZone.format("MMM Do")}</div>
+          <div className="time">{startTimeInZone.format("HH:mm")}</div>
+          <div className="zone">[UTC{offset}]</div>
+          <div className="duration">{endMoment.diff(startMoment, 'minutes')} minutes</div>
+        </td>
+        <td className="session">
+          {parallelSessions.map(ps => <Session {...ps} key={ps.sessionNumber}/>)}
+        </td>
+      </tr>
+  );
+}
 
-const ConferenceSchedule = ({allSessionInfo}) => (
-    <table className="conference-schedule">
-      {allSessionInfo.map(asi => <ScheduleLine {...asi} key={asi.startMoment.toISOString()}/>)}
-    </table>
-)
+const TimezoneChooser = ({tz, setTz}) => {
+  return (
+      <div className="timezone-chooser-wrapper">
+        <article className="timezone-chooser">
+          <span className="timezone-chooser-label">Show times in:</span>
+          <select value={tz} onChange={(event) => setTz(event.target.value)} className="timezone-chooser-select">
+            <option key="local" value="local">Your local time (UTC{localOffset})</option>
+            <option key="utc" value="utc">UTC</option>
+          </select>
+        </article>
+      </div>
+  );
+}
+
+const ConferenceSchedule = ({allSessionInfo}) => {
+  const [tz, setTz] = useState("local");
+  
+  return (
+      <>
+        <TimezoneChooser tz={tz} setTz={setTz}/>
+        <table className="conference-schedule">
+          <thead>
+          </thead>
+          <tbody>
+          {allSessionInfo.map(asi => <ScheduleLine {...asi} key={asi.startMoment.toISOString()} tzName={tz}/>)}
+          </tbody>
+        </table>
+      </>
+  );
+}
 
 const parseUtcTime = (utcTime) => moment.utc(utcTime, 'DD/MM/YYYY HH:mm:ss')
 
