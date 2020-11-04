@@ -14,7 +14,7 @@ const TemplateWrapper = ({ footerData = null, navbarData = null, site = null, se
     </Helmet>
     <Navbar data={navbarData} />
     <main>
-      {secondaryNavData ? <div id="secondary-nav" class="secondary"><Navbar data={secondaryNavData} /></div> : null}
+      {secondaryNavData ? <div id="secondary-nav" className="secondary"><Navbar data={secondaryNavData} /></div> : null}
       {children}
     </main>
     <Footer data={footerData} site={site} />
