@@ -123,7 +123,7 @@ const SchedulePage = ({data, location}) => {
         <PageHelmet page={page}/>
         <StandardPageTemplate page={{...page}}>
           <HTMLContent className="default-content" content={page.html}/>
-          <ConferenceSchedule allSessionInfo={sessionInfoFromGql(allSessionGroups)} highlightId={location.state.highlightId || null} />
+          <ConferenceSchedule allSessionInfo={sessionInfoFromGql(allSessionGroups)} highlightId={location.state?.highlightId || null} />
         </StandardPageTemplate>
       </Layout>
   );
