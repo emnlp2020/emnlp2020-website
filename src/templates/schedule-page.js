@@ -117,13 +117,17 @@ const sessionInfoFromGql = (allSessionGroups) => {
 const SchedulePage = ({data, location}) => {
   const {markdownRemark: page, footerData, navbarData, secondaryNavData, site, allScheduleCsv} = data;
   const {allSessionGroups} = allScheduleCsv
+  const locState = location.state
   
   return (
       <Layout {...{footerData, navbarData, secondaryNavData, site, location}}>
         <PageHelmet page={page}/>
         <StandardPageTemplate page={{...page}}>
           <HTMLContent className="default-content" content={page.html}/>
-          <ConferenceSchedule allSessionInfo={sessionInfoFromGql(allSessionGroups)} highlightId={location.state?.highlightId || null} />
+          <ConferenceSchedule
+              allSessionInfo={sessionInfoFromGql(allSessionGroups)}
+              highlightId={locState ? locState.highlightId || null : null}
+          />
         </StandardPageTemplate>
       </Layout>
   );
