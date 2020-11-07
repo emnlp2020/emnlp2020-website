@@ -649,7 +649,7 @@ sessions and sponsor booths.
 </table>
 
 
-The conference schedule is based around three "time blocks", of 2-5
+The [conference schedule](/schedule) is based around three "time blocks", of 2-5
 hours each, which are evenly distributed across the 24-hour day. There
 are gaps of a few hours between each block, during which different kinds
 of social activities have been scheduled. (See below.) Participants will
