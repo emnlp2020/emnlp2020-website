@@ -756,3 +756,8 @@ for more information.
 Please refer to the [EMNLP 2020 registration
 page](/registration) for more
 details.
+
+<p>&nbsp;</p>
+
+– *EMNLP 2020 Program Chairs: Trevor Cohn, Yulan He and Yang Liu*
+
