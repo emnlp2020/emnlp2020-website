@@ -133,3 +133,8 @@ website and shared on social media .
 Do you have any additional ideas or questions about D&I efforts at EMNLP
 2020? Feel free to contact us at 
 [emnlp2020diversity@googlegroups.com](mailto:emnlp2020diversity@googlegroups.com)
+
+<p>&nbsp;</p>
+
+– *EMNLP 2020 Diversity & Inclusion Chairs: Isabelle Augenstein, 
+Chris Brew, Murathan Kurfali, Prathyusha Jwalapuram*
