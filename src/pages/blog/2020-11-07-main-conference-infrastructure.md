@@ -735,7 +735,7 @@ tracks.
 -   There will be a panel, with presentations, for undergraduates
     attending EMNLP
 
-See the [blog post about Diversity & Inclusion initiatives](../2020-11-07-di-efforts) at EMNLP 2020
+See the [blog post about Diversity & Inclusion initiatives](/blog/2020-11-07-di-efforts) at EMNLP 2020
 for more information.
 
 ## Registration and Fees
