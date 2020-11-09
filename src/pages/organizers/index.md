@@ -6,4 +6,4 @@ seo:
   description: 
   title: Organizing committee | EMNLP 2020
 ---
-_Subcommittees_: [Senior Program Committee](/organizers/senior-program-committee) | [Ethics Committee](/organizers/ethics-committee)
+_Subcommittees_: [Senior Program Committee](/organizers/senior-program-committee) | [Ethics Committee](/organizers/ethics-committee) | [Best Paper Committee](/organizers/best-paper-committee)
