@@ -10,6 +10,21 @@ seo:
     The 2020 Conference on Empirical Methods in Natural Language Processing
   title: EMNLP 2020
 newsItems:
+  - date: 2020-10-23
+    text: "The [schedule of sessions](/schedule) is available."
+  - date: 2020-10-13
+    text: "The [keynote speakers](/keynotes) have been announced."
+  - date: 2020-10-04
+    text: "[Applications for EMNLP 2020 Diversity & Inclusions subsidies](https://forms.office.com/Pages/ResponsePage.aspx?id=kX-So6HNlkaviYyfHO_6kc6sgtkevo5FlcuZ17FkylVUMlZDM0JHWVoxRFRBT0RZUERRRjAzSUNURC4u) 
+      are now open. You can apply for a registration subsidy, bandwidth subsidy, or care giving subsidy."
+  - date: 2020-09-29
+    text: "[Instructions for camera-ready papers](/call-for-papers/camera-ready) are now available"
+  - date: 2020-09-26
+    text: Authors of papers accepting to [_Findings_](/blog/2020-07-30-findings-acl-response) will be asked next week about their preferences for also presenting their work (at the discretion of workshop chairs) at participating workshops.
+  - date: 2020-09-23
+    text: "[Registration is now open](/registration)"
+  - date: 2020-09-21
+    text: EMNLP is [seeking expressions of interest for hosting host affinity group socials](https://www.aclweb.org/portal/content/emnlp-2020-affinity-group-socials), to help build connections within the ACL community not purely based on overlap of technical expertise.
   - date: 2020-09-14
     text: "Authors are reminded that notifications will be sent by email to the contact author by 11.59 pm UTC -12h, September 14th. We ask authors to not repeatedly check status on Softconf before then."
   - date: 2020-06-04
@@ -20,7 +35,6 @@ newsItems:
     text: "The [call for system demonstrations](/call-for-papers/demos) is available"
   - date: 2020-04-29
     text: There is now an exemption to the [anonymity period policy](/call-for-papers#anonymity-period) for research relating to COVID-19
-    persist: true
   - date: 2020-04-08
     text: "[EMNLP 2020 has moved entirely to an online format](/attending#covid-online) and the conference dates have moved to one week later."
     persist: true
@@ -28,7 +42,6 @@ newsItems:
     text: In view of the COVID-19 situation, [there is a good chance that EMNLP 2020 may be run purely online](/attending#covid-online). 
   - date: 2020-03-10
     text: The call for papers has a [ethics policy](/call-for-papers#new-ethics-policy) and updated [submission guidelines](/call-for-papers#paper-submission-and-templates) 
-    persist: true
   - date: 2020-03-05
     text: "[Templates and styles files for papers](/files/emnlp2020-templates.zip) are available for download"
     persist: true

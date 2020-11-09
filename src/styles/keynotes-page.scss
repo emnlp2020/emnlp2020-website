@@ -1,0 +1,48 @@
+
+.keynote {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem;
+
+  &-photo-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // margin: 2rem;
+    width: 250px;
+    // flex-basis: 1;
+  }
+
+  &-details {
+    min-width: 200px;
+    max-width: 700px;
+    padding: 1rem;
+  }
+
+  .speaker-name {
+    font-weight: bold;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+  }
+
+  .talk-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+  }
+
+  .abstract {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;;
+  }
+  
+  .bio {
+    font-size: 0.85rem;
+    font-style: italic;
+  }
+
+}

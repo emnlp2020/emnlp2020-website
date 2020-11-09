@@ -16,9 +16,6 @@ $photo-height: 100px;
   .member {
     background-color: white;
     margin: 0.5rem;
-    padding: 0.75rem 0.5rem;
-    border: 1px solid lightgray;
-    border-radius: 5px;
     width: 12rem;
     min-height: $photo-height * 1.5;
 
@@ -60,4 +57,15 @@ $photo-height: 100px;
   font-weight: bold;
   font-size: 0.8rem;
   margin-top: 0.3rem;
+}
+
+.subcommittee-link {
+  margin-left: 1.5rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  padding: 0.5rem;
+
+  &::before {
+    content: " » ";
+  }
 }

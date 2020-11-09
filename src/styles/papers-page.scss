@@ -2,6 +2,9 @@
 @import "./mixins.scss";
 
 
+.papers-container {
+  max-width: $page-content-width;
+}
 
 h3.track-name {
   margin-top: 1rem;
@@ -14,21 +17,45 @@ h3.track-name {
 }
 
 .single-paper-listing {
-  margin-top: 0.4rem;
-  margin-bottom: 0.4rem;
-
-  & .paper-authors {
-    display: block;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-  }
+  font-size: 0.85rem;
+  padding: 0.1rem;
 
   & .paper-title {
-    display: block;
     font-style: italic;
   }
 }
 
 .track-paper-listing {
-  width: 75%;
+  width: 100%;
+}
+
+.papers-in-track {
+}
+
+li.single-paper-wrapper {
+  list-style-type: circle;
+}
+
+.search-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+  input {
+    font-size: 1.3rem;
+  }
+}
+
+.schedule-link {
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+}
+
+.paper-length-summary {
+  text-transform: lowercase;
+  font-weight: bold;
+}
+
+.summary {
+  margin-bottom: 1rem;
 }

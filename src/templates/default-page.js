@@ -5,16 +5,14 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import HTMLContent from "../components/Content";
 import PageHelmet from "../components/PageHelmet";
-import "../styles/about-page.scss";
+import "../styles/default-page.scss";
 import StandardPageTemplate from "../components/StandardPageTemplate";
 
-
-const DefaultPage = ({ data }) => {
+const DefaultPage = ({ data, location }) => {
   const { markdownRemark: page, footerData, navbarData, site } = data;
-  const { organizers: _ } = page.frontmatter;
 
   return (
-    <Layout footerData={footerData} navbarData={navbarData} site={site}>
+    <Layout footerData={footerData} navbarData={navbarData} site={site} location={location}>
       <PageHelmet page={page} />
       <StandardPageTemplate page={{ ...page }}>
         <HTMLContent className="default-content" content={page.html} />

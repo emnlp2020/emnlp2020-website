@@ -10,6 +10,9 @@
     organization: University of Warwick, UK
   - name: Yang Liu
     organization: Amazon – Alexa AI, USA
+  subcommittee:
+    title: Senior Program Committee
+    link: /organizers/senior-program-committee  
 - title: Workshop Chairs
   members:
   - name: Lonneke van der Plas
@@ -35,13 +38,17 @@
 - title: Publication Chairs
   members:
   - name: Philippe Muller
-    organization: University of Toulouse, France, UK
+    organization: University of Toulouse, France
   - name: Yang Gao
-    organization: Royal Holloway, University of London
-  - name: Jing Li
-    organization: The Hong Kong Polytechnic University, Hong Kong
+    organization: Royal Holloway, University of London, UK
   - name: Veronika Laippala
     organization: University of Turku, Finland
+- title: Findings Chairs
+  members:
+  - name: Jing Li
+    organization: The Hong Kong Polytechnic University, Hong Kong
+  - name: Lemao Liu
+    organization: Tencent AI Lab, China
 - title: Publicity Chairs
   members:
   - name: Anna Rogers
@@ -61,7 +68,7 @@
   - name: Isabelle Augenstein
     organization: University of Copenhagen
   - name: Chris Brew
-    organization: "[NA]"
+    organization: LivePerson
 - title: Diversity & Inclusion Student Chairs
   members:
   - name: Murathan Kurfali
@@ -78,12 +85,23 @@
     organization: Fudan University, China
   - name: Eduardo Blanco
     organization: University of North Texas, USA
+  - name: Yangsong Feng
+    organization: Peking University
 - title: Advisors, Virtual Infrastructure Committee
   members:
   - name: Sudha Rao
     organization: Microsoft Research, USA
   - name: Hao Fang
     organization: Microsoft Semantic Machines, USA
+- title: Ethics Committee Chairs
+  members: 
+    - name: Dirk Hovy
+      organization: Bocconi University, Italy
+    - name: Karën Fort
+      organization: Sorbonne University, France
+  subcommittee:
+    title: Ethics Committee
+    link: /organizers/ethics-committee
 - title: ACL Business Manager & Local Arrangements Chair
   members:
   - name: Priscilla Rasmussen

@@ -20,6 +20,9 @@ exports.createPages = ({ actions, graphql }) => {
             }
             frontmatter {
               templateKey
+              acceptanceStatusKey
+              section
+              forSection
             }
           }
         }
@@ -55,6 +58,7 @@ exports.createPages = ({ actions, graphql }) => {
         // additional data can be passed via context
         context: {
           id,
+          ...edge.node.frontmatter
         },
       });
     });

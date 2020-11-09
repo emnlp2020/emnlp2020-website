@@ -7,9 +7,9 @@ import HTMLContent from "../components/Content";
 import PageHelmet from "../components/PageHelmet";
 import StandardPageTemplate from "../components/StandardPageTemplate";
 import "../styles/organizers-page.scss";
+import "../styles/generic.scss";
 import Img from "gatsby-image";
-
-// const imagePathForName = (name) => `people/org-committee/${imageStem(name)}`;
+import slug from "slug";
 
 const imageStem = (name) => `${name.toLowerCase().replace(/ /g, '_')}`;
 
@@ -33,12 +33,13 @@ const MemberListing = ({ name, organization, sharpImageData }) => (
   </article>
 );
 
-const RoleListing = ({ title, members, images }) => (
+const RoleListing = ({ title, members, images, subcommittee }) => (
   <section className="role-listing">
-    <h3 className="role-title">{title}</h3>
+    <h3 className="role-title" id={slug(title, {lower: true})}>{title}</h3>
     <div className="role-listing-members">
       {members.map(m => <MemberListing {...m} sharpImageData={images.get(imageStem(m.name))} key={m.name}/>)}
     </div>
+    {subcommittee && <SubCommitteeLink {...subcommittee}/>}
   </section>
 );
 
@@ -48,14 +49,18 @@ const AllCommitteeRoles = ({ roles, images }) => (
   </section>
 );
 
-const OrgCommitteePage = ({ data }) => {
+const SubCommitteeLink = ({title, link}) => (
+  <a class="subcommittee-link" href={link}>{title}</a>
+)
+
+const OrgCommitteePage = ({ data, location }) => {
   const { markdownRemark: page, footerData, navbarData, site, committee, committeeImages } = data;
   const { roles } = committee;
   const { images } = committeeImages;
   const imagesByName = new Map(images.map(({ name, sharpImageData }) => [name, sharpImageData]));
 
   return (
-    <Layout footerData={footerData} navbarData={navbarData} site={site}>
+    <Layout footerData={footerData} navbarData={navbarData} site={site} location={location}>
       <PageHelmet page={page} />
       <StandardPageTemplate page={{ ...page }}>
         <HTMLContent className="default-content" content={page.html} />
@@ -90,6 +95,10 @@ export const organizersPageQuery = graphql`
         members {
           name
           organization
+        }
+        subcommittee {
+          title
+          link
         }
       }
     }

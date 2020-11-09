@@ -6,54 +6,30 @@ import "../styles";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 
-const TemplateWrapper = ({ footerData = null, navbarData = null, site = null, children }) => (
+const TemplateWrapper = ({ footerData = null, navbarData = null, site = null, secondaryNavData = null, children, location }) => (
   <div>
     <Helmet>
       <html lang="en" />
-      <meta name="keywords" content="workshop nlp natural language processing australia australasian australian sydney conference alta altw 2019" />
-      <meta name="google-site-verification" content="oHsm8TfiBgX6DjW9BTIOFEfT80pknaoqfoAi0G7bmS4" />
+      <meta name="keywords" content="conference nlp natural language processing emnlp 2020 acl" />
     </Helmet>
-    <Navbar data={navbarData} />
-    <main>{children}</main>
+    <Navbar data={navbarData} location={location} />
+    <main>
+      {secondaryNavData ? <div id="secondary-nav" className="secondary"><Navbar data={secondaryNavData} /></div> : null}
+      {children}
+    </main>
     <Footer data={footerData} site={site} />
   </div>
 );
 
+
+
 export const query = graphql`
   fragment LayoutFragment on Query {
     footerData: allMarkdownRemark(filter: { frontmatter: { templateKey: { eq: "footer" } } }) {
-      edges {
-        node {
-          id
-          frontmatter {
-            logoImage {
-              image
-              imageAlt
-              taglines
-              orgLink
-            }
-          }
-        }
-      }
+      ...FooterFieldsFragment
     }
     navbarData: allMarkdownRemark(filter: { frontmatter: { templateKey: { eq: "navbar" } } }) {
-      edges {
-        node {
-          id
-          frontmatter {
-            logoImage {
-              image
-              imageAlt
-            }
-            menuItems {
-              label
-              linkType
-              linkURL
-              longLabel
-            }
-          }
-        }
-      }
+      ...NavbarFieldsFragment
     }
   }
 `;

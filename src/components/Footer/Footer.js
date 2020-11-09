@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles.scss";
+import { graphql } from "gatsby";
 
 export const FooterTemplate = ({ frontmatter, site: _ }) => {
   const { logoImage } = frontmatter;
@@ -34,5 +35,23 @@ const Footer = ({data, site}) => {
   const frontmatter = data.edges[0].node.frontmatter;
   return <FooterTemplate frontmatter={frontmatter} site={site} />;
 };
+
+export const fieldsFragment = graphql`
+  fragment FooterFieldsFragment on MarkdownRemarkConnection {
+    edges {
+      node {
+        id
+        frontmatter {
+          logoImage {
+            image
+            imageAlt
+            taglines
+            orgLink
+          }
+        }
+      }
+    }
+  }
+`;
 
 export { Footer };

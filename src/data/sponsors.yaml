@@ -5,7 +5,7 @@
     - name: Google
       link: https://research.google
     - name: Apple
-      link: https://apple.com
+      link: https://www.apple.com/jobs/us/teams/machine-learning-and-ai.html
     - name: Amazon
       link: https://www.amazon.science
 - levelName: Platinum
@@ -24,6 +24,8 @@
       link: https://www.grammarly.com
     - name: ByteDance
       link: https://www.bytedance.com
+    - name: Zeta Alpha
+      link: https://www.zeta-alpha.com/
 - levelName: Silver
   sponsors:
     - name: Babelscape
@@ -32,6 +34,10 @@
       link: https://www.naverlabs.com
     - name: Adobe
       link: https://adobe.com
+    - name: Hitachi
+      link: http://www.hitachi.com/rd/index.html
+    - name: Salesforce
+      link: https://www.salesforce.com
 - levelName: Bronze
   sponsors:
     - name: ISI

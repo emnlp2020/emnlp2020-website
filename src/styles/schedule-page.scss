@@ -1,0 +1,70 @@
+.session-name {
+  font-weight: bold;
+  margin-right: 1rem;
+  padding-right: 0;
+}
+
+.session-time {
+  width: 8rem;
+
+  .zone {
+    color: gray;
+    font-size: 0.8rem;
+  }
+
+  .duration {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+}
+
+.session {
+  font-size: 0.8rem;
+  vertical-align: top;
+}
+
+ul.session-subsessions {
+  padding: 0;
+  margin: 0 0 5px 0;
+
+  li {
+    display: inline;
+  }
+
+  li + li:before {
+    content: " • "
+  }
+}
+
+.session-time {
+  vertical-align: top;
+}
+
+.session-row {
+  border-top: 1px solid lightgray;
+  td {
+    padding: 5px;
+  }
+}
+
+.timezone-chooser {
+  &-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+    margin-bottom: 0.5rem;
+  }
+
+  &-label {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-right: 1rem;
+  }
+}
+
+.highlight {
+  background-color: #a4adf04d;
+}

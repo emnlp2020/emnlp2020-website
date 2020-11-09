@@ -1,5 +1,7 @@
 @import "../../styles/variables.scss";
 
+$secondary-nav-color: #4a4e6f;
+
 .navbar {
   background-color: $background-dark;
   // height: $navbar-height;
@@ -38,9 +40,16 @@
       color: $menu-active;
     }
 
-    &[aria-current="page"] {
+    &[aria-current="page"], &.selected {
       font-weight: 600;
       color: $menu-active;
     }
+  }
+}
+
+
+.secondary {
+  .navbar {
+    background-color: $secondary-nav-color;
   }
 }

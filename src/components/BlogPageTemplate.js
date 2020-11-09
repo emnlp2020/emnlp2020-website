@@ -6,15 +6,15 @@ const BlogPageTemplate = props => {
   const { title, date } = page.frontmatter;
 
   return (
-    <article className="about blog">
-      <div className="about-container container">
+    <article className="default blog">
+      <div className="default-container container">
         <section className="post-header">
           <div className="all-posts-link"><Link to="/blog">❮ All Blog Posts</Link></div>
           <div className="post-date">{date}</div>
         </section>
-        <section className="about-header">
-          <div className="about-titleWrapper">
-            <h1 className="about-title">{title}</h1>
+        <section className="default-header">
+          <div className="default-titleWrapper">
+            <h1 className="default-title">{title}</h1>
           </div>
         </section>
         <section className="section">
