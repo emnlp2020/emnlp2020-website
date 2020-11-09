@@ -102,6 +102,13 @@
   subcommittee:
     title: Ethics Committee
     link: /organizers/ethics-committee
+- title: Best Paper Committee Chair
+  members: 
+    - name: Mirella Lapata
+      organization: University of Edinburgh, UK
+  subcommittee:
+    title: Best Paper Committee
+    link: /organizers/best-paper-committee
 - title: ACL Business Manager & Local Arrangements Chair
   members:
   - name: Priscilla Rasmussen
