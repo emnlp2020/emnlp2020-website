@@ -10,6 +10,9 @@ seo:
     The 2020 Conference on Empirical Methods in Natural Language Processing
   title: EMNLP 2020
 newsItems:
+  - date: 2020-11-16
+    text: The [virtual infrastructure site](https://virtual.2020.emnlp.org/) contains information for
+      about interactive participation in the conference. Registrants should have received login information by email.
   - date: 2020-10-23
     text: "The [schedule of sessions](/schedule) is available."
   - date: 2020-10-13
