@@ -11,7 +11,7 @@ seo:
   title: EMNLP 2020
 newsItems:
   - date: 2020-11-16
-    text: The [virtual infrastructure site](https://virtual.2020.emnlp.org/) contains information for
+    text: The [virtual conference site](https://virtual.2020.emnlp.org/) contains information 
       about interactive participation in the conference. Registrants should have received login information by email.
   - date: 2020-10-23
     text: "The [schedule of sessions](/schedule) is available."
