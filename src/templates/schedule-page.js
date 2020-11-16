@@ -12,11 +12,11 @@ import { domIdForPaper } from "./shared";
 
 const localOffset = moment().format("Z");
 
-const Subsession = ({paperID, paperTitle, paperAuthors, highlight}) => (
+const Subsession = ({paperID, paperTitle, paperAuthors, highlight, abstract}) => (
     <li
         className={`paper-title`}
         id={domIdForPaper(paperID)}
-        title={`${paperID}: ${paperAuthors}. ${paperTitle}`}
+        title={`${paperID}: ${paperAuthors}. ${paperTitle}: ${abstract || ''}`}
     >
       <span className={highlight ? "highlight" : ""}>
         {paperTitle}
@@ -92,19 +92,26 @@ const ConferenceSchedule = ({allSessionInfo, highlightId}) => {
 
 const parseUtcTime = (utcTime) => moment.utc(utcTime, 'DD/MM/YYYY HH:mm:ss')
 
-const normalizeSession = (singleSessionGroupGql) => {
+const normalizeSession = (singleSessionGroupGql, abstractsById) => {
   const {groupNodes} = singleSessionGroupGql
   const sessionProto = groupNodes[0]
   const {startUtc, endUtc, sessionNumber, sessionName, sessionLongName} = sessionProto
   const startMoment = parseUtcTime(startUtc)
   const endMoment = parseUtcTime(endUtc)
-  const subsessions = groupNodes.map(({paperID, paperTitle, paperAuthors}) => ({paperID, paperTitle, paperAuthors}))
+  const subsessions = groupNodes.map(({paperID, paperTitle, paperAuthors}) => (
+      {paperID, paperTitle, paperAuthors, abstract: abstractsById[paperID]})
+  )
   const sessionDisplayName = sessionLongName || sessionName;
   return {startMoment, endMoment, subsessions, sessionNumber, sessionDisplayName}
 }
 
-const sessionInfoFromGql = (allSessionGroups, sessionChairs) => {
-  const normalizedSessions = allSessionGroups.map(normalizeSession)
+const sessionInfoFromGql = (allSessionGroups, sessionChairs, papers) => {
+  const abstractsById = {}
+  papers.forEach(({paperID, abstract}) => {
+    abstractsById[paperID] = abstract
+  })
+  
+  const normalizedSessions = allSessionGroups.map(group => normalizeSession(group, abstractsById))
   
   const chairsBySessionName = {}
   sessionChairs.forEach(({sessionLongName, chair}) => {
@@ -127,9 +134,19 @@ const sessionInfoFromGql = (allSessionGroups, sessionChairs) => {
 }
 
 const SchedulePage = ({data, location}) => {
-  const {markdownRemark: page, footerData, navbarData, secondaryNavData, site, allScheduleCsv, allSessionChairsCsv} = data;
+  const {
+    markdownRemark: page,
+    footerData,
+    navbarData,
+    secondaryNavData,
+    site,
+    allScheduleCsv,
+    allSessionChairsCsv,
+    allPapersCsv
+  } = data;
   const {allSessionGroups} = allScheduleCsv
   const {sessionChairs} = allSessionChairsCsv
+  const {papers} = allPapersCsv
   const locState = location.state
   
   return (
@@ -138,7 +155,7 @@ const SchedulePage = ({data, location}) => {
         <StandardPageTemplate page={{...page}}>
           <HTMLContent className="default-content" content={page.html}/>
           <ConferenceSchedule
-              allSessionInfo={sessionInfoFromGql(allSessionGroups, sessionChairs)}
+              allSessionInfo={sessionInfoFromGql(allSessionGroups, sessionChairs, papers)}
               highlightId={locState ? locState.highlightId || null : null}
           />
         </StandardPageTemplate>
@@ -180,6 +197,12 @@ export const schedulePageQuery = graphql`
       sessionChairs: nodes {
         sessionLongName
         chair
+      }
+    }
+    allPapersCsv {
+      papers: nodes {
+        paperID: submissionID
+        abstract
       }
     }
     ...LayoutFragment
