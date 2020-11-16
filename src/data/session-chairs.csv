@@ -1,0 +1,287 @@
+chair,sessionLongName,Papers
+Chenghua Lin (Sheffield),"Zoom Q&A Session 1A: Sentiment Analysis, Stylistic Analysis, and Argument Mining","438 # Detecting Attackable Sentences in Arguments >> Yohan Jo, Seojin Bang, Emaad Manzoor, Eduard Hovy and Chris Reed
+440 # Extracting Implicitly Asserted Propositions in Argumentation >> Yohan Jo, Jacky Visser, Chris Reed and Eduard Hovy
+2688 # Quantitative Argument Summarization and Beyond: Cross-Domain Key Point Analysis >> Roy Bar-Haim, Yoav Kantor, Lilach Eden, Roni Friedman, Dan Lahav and Noam Slonim
+2996 # Unsupervised Stance Detection for Arguments from Consequences >> Jonathan Kobbe, Ioana Hulpuș and Heiner Stuckenschmidt"
+Colin Cherry (Google),Zoom Q&A Session 1B: Machine Translation and Multilinguality,"84 # BLEU might be Guilty but References are not Innocent >> Markus Freitag, David Grangier and Isaac Caswell
+619 # Statistical Power and Translationese in Machine Translation Evaluation >> Yvette Graham, Barry Haddow and Philipp Koehn
+856 # Simulated Multiple Reference Training Improves Low-Resource Machine Translation >> Huda Khayrallah, Brian Thompson, Matt Post and Philipp Koehn
+888 # Automatic Machine Translation Evaluation in Many Languages via Zero-Shot Paraphrasing >> Brian Thompson and Matt Post
+TACL1997 # Unsupervised Quality Estimation for Neural Machine Translation >> Marina Fomicheva, Shuo Sun, Lisa Yankovskaya, Frédéric Blain, Francisco Guzmán, Mark Fishel, Nikolaos Aletras, Vishrav Chaudhary, Lucia Specia"
+Avi Sil (IBM Research),Zoom Q&A Session 1C: Question Answering,"2054 # PRover: Proof Generation for Interpretable Reasoning over Rules >> Swarnadeep Saha, Sayan Ghosh, Shashank Srivastava and Mohit Bansal
+2228 # Learning to Explain: Datasets and Models for Identifying Valid Reasoning Chains in Multihop Question-Answering >> Harsh Jhamtani and Peter Clark
+2640 # Self-Supervised Knowledge Triplet Learning for Zero-Shot Question Answering >> Pratyay Banerjee and Chitta Baral
+2721 # More Bang for Your Buck: Natural Perturbation for Robust Question Answering >> Daniel Khashabi, Tushar Khot and Ashish Sabharwal
+TACL2049 # What Does My QA Model Know? Devising Controlled Probes using Expert >> Kyle Richardson, Ashish Sabharwal"
+Ryan Cotterell (ETH Zürich),Zoom Q&A Session 1D: Interpretability and Analysis of Models for NLP,"498 # A Matter of Framing: The Impact of Linguistic Formalism on Probing Results >> Ilia Kuznetsov and Iryna Gurevych
+947 # Information-Theoretic Probing with Minimum Description Length >> Elena Voita and Ivan Titov
+2122 # Intrinsic Probing through Dimension Selection >> Lucas Torroba Hennigen, Adina Williams and Ryan Cotterell
+2893 # Learning Which Features Matter: RoBERTa Acquires a Preference for Linguistic Generalizations (Eventually) >> Alex Warstadt, Yian Zhang, Xiaocheng Li, Haokun Liu and Samuel R. Bowman"
+Dani Yogatama,Zoom Q&A Session 2A: Machine Learning for NLP,"903 # Repulsive Attention: Rethinking Multi-head Attention as Bayesian Inference >> Bang An, Jie Lyu, Zhenyi Wang, Chunyuan Li, Changwei Hu, Fei Tan, Ruiyi Zhang, Yifan Hu and Changyou Chen
+1210 # KERMIT: Complementing Transformer Architectures with Encoders of Explicit Syntactic Interpretations >> Fabio Massimo Zanzotto, Andrea Santilli, Leonardo Ranaldi, Dario Onorati, Pierfrancesco Tommasino and Francesca Fallucchi
+1618 # ETC: Encoding Long and Structured Inputs in Transformers >> Joshua Ainslie, Santiago Ontanon, Chris Alberti, Vaclav Cvicek, Zachary Fisher, Philip Pham, Anirudh Ravula, Sumit Sanghai, Qifan Wang and Li Yang
+2343 # Pre-Training Transformers as Energy-Based Cloze Models >> Kevin Clark, Minh-Thang Luong, Quoc Le and Christopher D. Manning
+2615 # Calibration of Pre-trained Transformers >> Shrey Desai and Greg Durrett"
+Maria Liakata,Zoom Q&A Session 2B: NLP Applications,"TACL2047 # Data Weighted Training Strategies for Grammatical Error Correction >> Jared Lichtarge, Chris Alberti, Shankar Kumar
+328 # Near-imperceptible Neural Linguistic Steganography via Self-Adjusting Arithmetic Coding >> Jiaming Shen, Heng Ji and Jiawei Han
+802 # Multi-Dimensional Gender Bias Classification >> Emily Dinan, Angela Fan, Ledell Wu, Jason Weston, Douwe Kiela and Adina Williams
+2958 # FIND: Human-in-the-Loop Debugging Deep Text Classifiers >> Piyawat Lertvittayakumjorn, Lucia Specia and Francesca Toni
+1390 # Conversational Document Prediction to Assist Customer Care Agents >> Jatin Ganhotra, Haggai Roitman, Doron Cohen, Nathaniel Mills, Chulaka Gunasekara, Yosi Mass, Sachindra Joshi, Luis Lastras and David Konopnicki"
+Mark Hasegawa-Johnson (UIUC),Zoom Q&A Session 2C: Dialog and Interactive Systems,"1219 # Incremental Processing in the Age of Non-Incremental Encoders: An Empirical Assessment of Bidirectional Models for Incremental NLU >> Brielen Madureira and David Schlangen
+TACL2143 # Task-Oriented Dialogue as Dataflow Synthesis >> Jacob Andreas, John Bufe, David Burkett, Charles Chen, Josh Clausman, Jean Crawford, Kate Crim, Jordan DeLoach, Leah Dorner, Jason Eisner, Hao Fang, Alan Guo, David Hall, Kristin Hayes, Kellie Hill, Diana Ho, Wendy Iwaszuk, Smriti Jha, Dan Klein, Jayant Krishnamurthy, Theo Lanman, Percy Liang, Christopher Lin, Ilya Lintsbakh, Andy McGovern, Alexander Nisnevich, Adam Pauls, Brent Read, Dan Roth, Subhro Roy, Beth Short, Div Slomin, Ben Snyder, Stephon Striplin, Yu Su, Zachary Tellman, Sam Thomson, Andrei Vorobev, Izabela Witoszko, Jason Wolfe, Abby Wray, Yuchen Zhang, Alexander Zotov, Jesse Rusak, Dmitrij Petters
+148 # Augmented Natural Language for Generative Sequence Labeling >> Ben Athiwaratkun, Cícero Nogueira dos Santos, Jason Krone and Bing Xiang
+1700 # Dialogue Response Ranking Training with Large-Scale Human Feedback Data >> Xiang Gao, Yizhe Zhang, Michel Galley, Chris Brockett and Bill Dolan"
+Eduardo Blanco (UNT),"Zoom Q&A Session 2D: Semantics: Sentence-level Semantics, Textual Inference and Other areas","3544 # Semantic Evaluation for Text-to-SQL with Distilled Test Suites >> Ruiqi Zhong, Tao Yu and Dan Klein
+2635 # Cross-Thought for Sentence Encoder Pre-training >> Shuohang Wang, Yuwei Fang, Siqi Sun, Zhe Gan, Yu Cheng, Jingjing Liu and Jing Jiang
+3506 # AutoQA: From Databases To QA Semantic Parsers With Only Synthetic Training Data >> Silei Xu, Sina Semnani, Giovanni Campagna and Monica Lam
+TACL2135 # Sketch-Driven Regular Expression Generation from Natural Language and Examples >> Xi Ye, Qiaochu Chen, Xinyu Wang, Isil Dillig, Greg Durrett"
+Massimo Piccardi (UTS),Zoom Q&A Session 3A: Summarization,"2900 # A Spectral Method for Unsupervised Multi-Document Summarization >> Kexiang Wang, Baobao Chang and Zhifang Sui
+965 # What Have We Achieved on Text Summarization? >> Dandan Huang, Leyang Cui, Sen Yang, Guangsheng Bao, Wang Kun, Jun Xie and Yue Zhang
+471 # Q-learning with Language Model for Edit-based Unsupervised Summarization >> Ryosuke Kohita, Akifumi Wachi, Yang Zhao and Ryuki Tachibana
+3111 # Friendly Topic Assistant for Transformer Based Abstractive Summarization >> Zhengjue Wang, Zhibin Duan, Hao Zhang, chaojie wang, long tian, Bo Chen and Mingyuan Zhou"
+Wray Buntine (Monash),Zoom Q&A Session 3B: Machine Learning for NLP,"3394 # Contrastive Distillation on Intermediate Representations for Language Model Compression >> Siqi Sun, Zhe Gan, Yuwei Fang, Yu Cheng, Shuohang Wang and Jingjing Liu
+2783 # TernaryBERT: Distillation-aware Ultra-low Bit BERT >> Wei Zhang, Lu Hou, Yichun Yin, Lifeng Shang, Xiao Chen, Xin Jiang and Qun Liu
+2793 # Self-Supervised Meta-Learning for Few-Shot Natural Language Classification Tasks >> Trapit Bansal, Rishikesh Jha, Tsendsuren Munkhdalai and Andrew McCallum
+2838 # Efficient Meta Lifelong-Learning with Limited Memory >> Zirui Wang, Sanket Vaibhav Mehta, Barnabas Poczos and Jaime Carbonell"
+Lei Li (ByteDance),Zoom Q&A Session 3C: Machine Translation and Multilinguality,"858 # Don't Use English Dev: On the Zero-Shot Cross-Lingual Evaluation of Contextual Embeddings >> Phillip Keung, yichao lu, Julian Salazar and Vikas Bhardwaj
+TACL2107 # Multilingual Denoising Pre-training for Neural Machine Translation >> Jiatao Gu, Yinhan Liu, Naman Goyal, Xian Li, Sergey Edunov, Marjan Ghazvininejad, Mike Lewis, Luke Zettlemoyer
+1503 # A Supervised Word Alignment Method based on Cross-Language Span Prediction using Multilingual BERT >> Masaaki Nagata, Katsuki Chousa and Masaaki Nishino
+1694 # Accurate Word Alignment Induction from Neural Machine Translation >> Yun Chen, Yang Liu, Guanhua Chen, Xin Jiang and Qun Liu
+3370 # ChrEn: Cherokee-English Machine Translation for Endangered Language Revitalization >> Shiyue Zhang, Benjamin Frey and Mohit Bansal"
+Alice Oh,Zoom Q&A Session 3D: Computational Social Science and Social Media,"838 # Unsupervised Discovery of Implicit Gender Bias >> Anjalie Field and Yulia Tsvetkov
+2561 # Condolence and Empathy in Online Communities >> Naitian Zhou and David Jurgens
+2651 # An Embedding Model for Estimating Legislative Preferences from the Frequency and Sentiment of Tweets >> Gregory Spell, Brian Guay, Sunshine Hillygus and Lawrence Carin
+2894 # Measuring Information Propagation in Literary Social Networks >> Matthew Sims and David Bamman
+3450 # Social Chemistry 101: Learning to Reason about Social and Moral Norms >> Maxwell Forbes, Jena D. Hwang, Vered Shwartz, Maarten Sap and Yejin Choi"
+Eunsol Choi,Zoom Q&A Session 4A: Information Extraction,"96 # Event Extraction by Answering (Almost) Natural Questions >> Xinya Du and Claire Cardie
+237 # Connecting the Dots: Event Graph Schema Induction with Path Language Modeling >> Manling Li, Qi Zeng, Ying Lin, Kyunghyun Cho, Heng Ji, Jonathan May, Nathanael Chambers and Clare Voss
+1116 # Joint Constrained Learning for Event-Event Relation Extraction >> Haoyu Wang, Muhao Chen, Hongming Zhang and Dan Roth
+1749 # Incremental Event Detection via Knowledge Consolidation Networks >> Pengfei Cao, Yubo Chen, Jun Zhao and Taifeng Wang
+2427 # Semi-supervised New Event Type Induction and Event Detection >> Lifu Huang and Heng Ji"
+Greg Durrett,Zoom Q&A Session 4B: Language Generation,"923 # Language Generation with Multi-Hop Reasoning on Commonsense Knowledge Graph >> Haozhe Ji, Pei Ke, Shaohan Huang, Furu Wei, Xiaoyan Zhu and Minlie Huang
+1581 # Reformulating Unsupervised Style Transfer as Paraphrase Generation >> Kalpesh Krishna, John Wieting and Mohit Iyyer
+2511 # PAIR: Planning and Iterative Refinement in Pre-trained Transformers for Long Text Generation >> Xinyu Hua and Lu Wang
+3010 # Plan ahead: Self-Supervised Text Planning for Paragraph Completion Task >> Dongyeop Kang and Eduard Hovy
+3270 # Back to the Future: Unsupervised Backprop-based Decoding for Counterfactual and Abductive Commonsense Reasoning >> Lianhui Qin, Vered Shwartz, Peter West, Chandra Bhagavatula, Jena D. Hwang, Ronan Le Bras, Antoine Bosselut and Yejin Choi"
+Xin Eric Wang (UCSC),"Zoom Q&A Session 4C: Language Grounding to Vision, Robotics and Beyond","647 # Where Are You? Localization from Embodied Dialog >> Meera Hahn, Jacob Krantz, Dhruv Batra, Devi Parikh, James Rehg, Stefan Lee and Peter Anderson
+1071 # Learning to Represent Image and Text with Denotation Graph >> Bowen Zhang, Hexiang Hu, Vihan Jain, Eugene Ie and Fei Sha
+1085 # Video2Commonsense: Generating Commonsense Descriptions to Enrich Video Captioning >> Zhiyuan Fang, Tejas Gokhale, Pratyay Banerjee, Chitta Baral and Yezhou Yang
+1670 # Does my multimodal model learn cross-modal interactions? It’s harder to tell than you might think! >> Jack Hessel and Lillian Lee
+3183 # MUTANT: A Training Paradigm for Out-of-Distribution Generalization in Visual Question Answering >> Tejas Gokhale, Pratyay Banerjee, Chitta Baral and Yezhou Yang"
+Kevin Small (Amazon),Zoom Q&A Session 4D: Dialog and Interactive Systems,"318 # Mitigating Gender Bias for Neural Dialogue Generation with Adversarial Learning >> Haochen Liu, Wentao Wang, Yiqi Wang, Hui Liu, Zitao Liu and Jiliang Tang
+419 # Will I Sound Like Me? Improving Persona Consistency in Dialogues through Pragmatic Self-Consciousness >> Hyunwoo Kim, Byeongchang Kim and Gunhee Kim
+1201 # TOD-BERT: Pre-trained Natural Language Understanding for Task-Oriented Dialogue >> Chien-Sheng Wu, Steven C.H. Hoi, Richard Socher and Caiming Xiong
+1702 # RiSAWOZ: A Large-Scale Multi-Domain Wizard-of-Oz Dataset with Rich Semantic Annotations for Task-Oriented Dialogue Modeling >> Jun Quan, Shian Zhang, Qian Cao, Zizhong Li and Deyi Xiong
+2164 # Filtering Noisy Dialogue Corpora by Connectivity and Content Relatedness >> Reina Akama, Sho Yokoi, Jun Suzuki and Kentaro Inui"
+Kang Liu,Zoom Q&A Session 5A: Information Extraction,"983 # Enhancing Aspect Term Extraction with Soft Prototypes >> Zhuang Chen and Tieyun Qian
+2938 # FedED: Federated Learning via Ensemble Distillation for Medical Relation Extraction >> Dianbo Sui, Yubo Chen, Jun Zhao, Yantao Jia, Yuantao Xie and Weijian Sun
+3136 # Multimodal Joint Attribute Prediction and Value Extraction for E-commerce Product >> Tiangang Zhu, Yue Wang, Haoran Li, Youzheng Wu, Xiaodong He and Bowen Zhou
+3497 # A Predicate-Function-Argument Annotation of Natural Language for Open-Domain Information eXpression >> Mingming Sun, Wenyue Hua, Zoe Liu, Xin Wang, kangjie zheng and Ping Li"
+Lei Li (ByteDance),Zoom Q&A Session 5B: Language Generation,"204 # Retrofitting Structure-aware Transformer Language Model for End Tasks >> Hao Fei, Yafeng Ren and Donghong Ji
+2795 # Lightweight, Dynamic Graph Convolutional Networks for AMR-to-Text Generation >> Yan Zhang, Zhijiang Guo, Zhiyang Teng, Wei Lu, Shay B. Cohen, ZUOZHU LIU and Lidong Bing
+TACL2121 # Modeling Global and Local Node Contexts for Text Generation from Knowledge Graphs >> Leonardo F. R. Ribeiro, Yue Zhang, Claire Gardent, Iryna Gurevych
+1377 # If beam search is the answer, what was the question? >> Clara Meister, Ryan Cotterell and Tim Vieira
+TACL2169 # A* Beam Search >> Clara Meister, Ryan Cotterell, Tim Vieira"
+Reza Haffari (Monash University),Zoom Q&A Session 5C: Machine Learning for NLP,"2535 # Understanding the Mechanics of SPIGOT: Surrogate Gradients for Latent Structure Learning >> Tsvetomila Mihaylova, Vlad Niculae and André F. T. Martins
+2452 # Is the Best Better? Bayesian Statistical Model Comparison for Natural Language Processing >> Piotr Szymański and Kyle Gorman
+362 # Exploring Logically Dependent Multi-task Learning with Causal Inference >> Wenqing Chen, Jidong Tian, Liqiang Xiao, Hao He and Yaohui Jin
+1220 # Masking as an Efficient Alternative to Finetuning for Pretrained Language Models >> Mengjie Zhao, Tao Lin, Fei Mi, Martin Jaggi and Hinrich Schütze
+TACL2095 # Interactive Text Ranking with Bayesian Optimisation: A Case Study on Community QA and Summarisation >> Edwin Simpson, Yang Gao, Iryna Gurevych"
+Barry Haddow (University of Edinburgh),Zoom Q&A Session 5D: Machine Translation and Multilinguality,"1504 # Dynamic Context Selection for Document-level Neural Machine Translation via Reinforcement Learning >> Xiaomian Kang, Yang Zhao, Jiajun Zhang and Chengqing Zong
+2674 # Data Rejuvenation: Exploiting Inactive Training Examples for Neural Machine Translation >> Wenxiang Jiao, Xing Wang, Shilin He, Irwin King, Michael Lyu and Zhaopeng Tu
+3227 # Pronoun-Targeted Fine-tuning for NMT with Hybrid Losses >> Prathyusha Jwalapuram, Shafiq Joty and Youlin Shen
+3236 # Learning Adaptive Segmentation Policy for Simultaneous Translation >> Ruiqing Zhang, Chuanqiang Zhang, Zhongjun He, Hua Wu and Haifeng Wang
+400 # Learn to Cross-lingual Transfer with Meta Graph Learning Across Heterogeneous Languages >> Zheng Li, Mukul Kumar, William Headden, Bing Yin, Ying Wei, Yu Zhang and Qiang Yang"
+Mark Johnson,"Zoom Q&A Session 6A: Syntax: Tagging, Chunking, and Parsing","TACL2411 # Syntactic Structure Distillation Pretraining for Bidirectional Encoders >> Adhiguna Kuncoro, Lingpeng Kong, Daniel Fried, Dani Yogatama, Laura Rimell, Chris Dyer, Phil Blunsom
+750 # UDapter: Language Adaptation for Truly Universal Dependency Parsing >> Ahmet Üstün, Arianna Bisazza, Gosse Bouma and Gertjan van Noord
+1225 # Uncertainty-Aware Label Reﬁnement for Sequence Labeling >> Tao Gui, Jiacheng Ye, Qi Zhang, Zhengyan Li, zichu fei, Yeyun Gong and Xuanjing Huang
+2895 # Adversarial Attack and Defense of Structured Prediction Models >> Wenjuan Han, Liwen Zhang, Yong Jiang and Kewei Tu
+3282 # Position-Aware Tagging for Aspect Sentiment Triplet Extraction >> Lu Xu, Hao Li, Wei Lu and Lidong Bing"
+Ekaterina Vylomova (University of Melbourne),Zoom Q&A Session 6B: Machine Translation and Multilinguality,"1402 # Simultaneous Machine Translation with Visual Context >> Ozan Caglayan, Julia Ive, Veneta Haralampieva, Pranava Madhyastha, Loïc Barrault and Lucia Specia
+623 # XCOPA: A Multilingual Dataset for Causal Commonsense Reasoning >> Edoardo Maria Ponti, Goran Glavaš, Olga Majewska, Qianchu Liu, Ivan Vulić and Anna Korhonen
+2131 # The Secret is in the Spectra: Predicting Cross-lingual Task Performance with Spectral Similarity Measures >> Haim Dubossarsky, Ivan Vulić, Roi Reichart and Anna Korhonen
+2718 # Bridging Linguistic Typology and Multilingual Machine Translation with Multi-View Language Representations >> Arturo Oncevay, Barry Haddow and Alexandra Birch
+CL2 # Semantic Drift in Multilingual Representations >> Lisa Beinborn, Rochelle Choenni"
+Wanxiang Che,Zoom Q&A Session 6C: Question Answering,"1004 # AnswerFact: Fact Checking in Product Question Answering >> Wenxuan Zhang, Yang Deng, Jing Ma and Wai Lam
+1022 # Context-Aware Answer Extraction in Question Answering >> Yeon Seonwoo, Ji-Hoon Kim, Jung-Woo Ha and Alice Oh
+2258 # What do Models Learn from Question Answering Datasets? >> Priyanka Sen and Amir Saffari
+1622 # Discern: Discourse-Aware Entailment Reasoning Network for Conversational Machine Reading >> Yifan Gao, Chien-Sheng Wu, Jingjing Li, Shafiq Joty, Steven C.H. Hoi, Caiming Xiong, Irwin King and Michael Lyu"
+Gabriel Stanovsky (Hebrew University),"Zoom Q&A Session 6D: Semantics: Sentence-level Semantics, Textual Inference and Other areas","3057 # A Method for Building a Commonsense Inference Dataset based on Basic Events >> Kazumasa Omura, Daisuke Kawahara and Sadao Kurohashi
+1187 # Neural Deepfake Detection with Factual Structure of Text >> Wanjun Zhong, Duyu Tang, Zenan Xu, Ruize Wang, Nan Duan, Ming Zhou, Jiahai Wang and Jian Yin
+1032 # MultiCQA: Zero-Shot Transfer of Self-Supervised Text Matching Models on a Massive Scale >> Andreas Rücklé, Jonas Pfeiffer and Iryna Gurevych
+1649 # XL-AMR: Enabling Cross-Lingual AMR Parsing with Transfer Learning Techniques >> Rexhina Blloshmi, Rocco Tripodi and Roberto Navigli
+2098 # Improving AMR Parsing with Sequence-to-Sequence Pre-training >> Dongqin Xu, Junhui Li, Muhua Zhu, Min Zhang and Guodong Zhou"
+Seokhwan Kim (Amazon Alexa AI),Zoom Q&A Session 7A: Dialog and Interactive Systems,"2066 # Improving Out-of-Scope Detection in Intent Classification by Using Embeddings of the Word Graph Space of the Classes >> Paulo Cavalin, Victor Henrique Alves Ribeiro, Ana Appel and Claudio Pinhanez
+2583 # Supervised Seeded Iterated Learning for Interactive Language Learning >> Yuchen Lu, Soumye Singhal, Florian Strub, Olivier Pietquin and Aaron Courville
+2281 # Spot The Bot: A Robust and Efficient Framework for the Evaluation of Conversational Dialogue Systems >> Jan Deriu, Don Tuggener, Pius von Däniken, Jon Ander Campos, Alvaro Rodrigo, Thiziri Belkacem, Aitor Soroa, Eneko Agirre and Mark Cieliebak
+2410 # Human-centric dialog training via offline reinforcement learning >> Natasha Jaques, Judy Hanwen Shen, Asma Ghandeharioun, Craig Ferguson, Agata Lapedriza, Noah Jones, Shixiang Gu and Rosalind Picard"
+Roger Levy,"Zoom Q&A Session 7B: Linguistic Theories, Cognitive Modeling and Psycholinguistics","644 # Speakers Fill Lexical Semantic Gaps with Context >> Tiago Pimentel, Rowan Hall Maudslay, Damian Blasi and Ryan Cotterell
+1282 # Investigating Cross-Linguistic Adjective Ordering Tendencies with a Latent-Variable Model >> Jun Yen Leung, Guy Emerson and Ryan Cotterell
+1492 # Surprisal Predicts Code-Switching in Chinese-English Bilingual Text >> Jesús Calvillo, Le Fang, Jeremy Cole and David Reitter
+3115 # Word Frequency Does Not Predict Grammatical Knowledge in Language Models >> Charles Yu, Ryan Sie, Nicolas Tedeschi and Leon Bergen
+TACL2013 # BLiMP: The Benchmark of Linguistic Minimal Pairs for English >> Alex Warstadt, Alicia Parrish, Haokun Liu, Anhad Monananey, Wei Peng, Sheng-Fu Wang, Samuel Bowman"
+Michael Roth (UStuttgart),Zoom Q&A Session 7C: Semantics: Lexical Semantics,"2891 # Improving Word Sense Disambiguation with Translations >> Yixing Luan, Bradley Hauer, Lili Mou and Grzegorz Kondrak
+1395 # Towards Better Context-aware Lexical Semantics:Adjusting Contextualized Representations through Static Anchors >> Qianchu Liu, Diana McCarthy and Anna Korhonen
+1393 # Sequential Modelling of the Evolution of Word Representations for Semantic Change Detection >> Adam Tsakalidis and Maria Liakata
+2920 # Do ""Undocumented Workers"" == ""Illegal Aliens""? Differentiating Denotation and Connotation in Vector Spaces >> Albert Webson, Zhizhong Chen, Carsten Eickhoff and Ellie Pavlick"
+Asma Ben Abacha (NLM/NIH) ,Zoom Q&A Session 7D: Summarization,"645 # Multi-View Sequence-to-Sequence Models with Conversational Structure for Abstractive Dialogue Summarization >> Jiaao Chen and Diyi Yang
+1023 # Few-Shot Learning for Opinion Summarization >> Arthur Bražinskas, Mirella Lapata and Ivan Titov
+3464 # Learning to Fuse Sentences with Transformers for Summarization >> Logan Lebanoff, Franck Dernoncourt, Doo Soon Kim, Lidan Wang, Walter Chang and Fei Liu
+3398 # Stepwise Extractive Summarization and Planning with Structured Transformers >> Shashi Narayan, Joshua Maynez, Jakub Adamek, Daniele Pighin, Blaz Bratanic and Ryan McDonald"
+Matthias Petri ,Zoom Q&A Session 8A: Information Retrieval and Text Mining,"1298 # CLIRMatrix: A massively large collection of bilingual and multilingual datasets for Cross-Lingual Information Retrieval >> Shuo Sun and Kevin Duh
+2825 # SLEDGE-Z: A Zero-Shot Baseline for COVID-19 Literature Search >> Sean MacAvaney, Arman Cohan and Nazli Goharian
+3541 # Modularized Transfomer-based Ranking Framework >> Luyu Gao, Zhuyun Dai and Jamie Callan
+3240 # Ad-hoc Document Retrieval using Weak-Supervision with BERT and GPT2 >> Yosi Mass and Haggai Roitman"
+Kai-Wei Chang (UCLA),Zoom Q&A Session 8B: Interpretability and Analysis of Models for NLP,"2005 # Adversarial Semantic Collisions >> Congzheng Song, Alexander Rush and Vitaly Shmatikov
+2040 # Learning Explainable Linguistic Expressions with Neural Inductive Logic Programming for Sentence Classification >> Prithviraj Sen, Marina Danilevsky, Yunyao Li, Siddhartha Brahma, Matthias Boehm, Laura Chiticariu and Rajasekar Krishnamurthy
+2763 # AutoPrompt: Eliciting Knowledge from Language Models with Automatically Generated Prompts >> Taylor Shin, Yasaman Razeghi, Robert L Logan IV, Eric Wallace and Sameer Singh
+2585 # Learning Variational Word Masks to Improve the Interpretability of Neural Text Classifiers >> Hanjie Chen and Yangfeng Ji"
+Florian Metze (Facebook AI),"Zoom Q&A Session 8D: Language Grounding to Vision, Robotics and Beyond","2058 # Refer, Reuse, Reduce: Generating Subsequent References in Visual and Conversational Contexts >> Ece Takmaz, Mario Giulianelli, Sandro Pezzelle, Arabella Sinclair and Raquel Fernández
+2702 # Visually Grounded Compound PCFGs >> Yanpeng Zhao and Ivan Titov
+76 # ALICE: Active Learning with Contrastive Natural Language Explanations >> Weixin Liang, James Zou and Zhou Yu
+1113 # Room-Across-Room: Multilingual Vision-and-Language Navigation with Dense Spatiotemporal Grounding >> Alexander Ku, Peter Anderson, Roma Patel, Eugene Ie and Jason Baldridge
+2991 # SSCR: Iterative Language-Based Image Editing via Self-Supervised Counterfactual Reasoning >> Tsu-Jui Fu, Xin Wang, Scott Grafton, Miguel Eckstein and William Yang Wang"
+Yannis Konstas (Heriot-Watt),Zoom Q&A Session 8C: Language Generation,"648 # Sparse Text Generation >> Pedro Henrique Martins, Zita Marinho and André F. T. Martins
+1687 # PlotMachines: Outline-Conditioned Generation with Dynamic Plot State Tracking >> Hannah Rashkin, Asli Celikyilmaz, Yejin Choi and Jianfeng Gao
+2430 # Do sequence-to-sequence VAEs learn global features of sentences? >> Tom Bosc and Pascal Vincent
+2982 # Content Planning for Neural Story Generation with Aristotelian Rescoring >> Seraphina Goldfarb-Tarrant, Tuhin Chakrabarty, Ralph Weischedel and Nanyun Peng
+3179 # Generating Dialogue Responses from a Semantic Latent Space >> Wei-Jen Ko, Avik Ray, Yilin Shen and Hongxia Jin"
+"Mahnoosh Mehrabani
+(Interactions)","Zoom Q&A Session 9A: Speech and Multimodality
+","2383 # Widget Captioning: Generating Natural Language Description for Mobile User Interface Elements >> Yang Li, Gang Li, Luheng He, Jingjie Zheng, Hong Li and Zhiwei Guan
+3239 # Unsupervised Natural Language Inference via Decoupled Multimodal Contrastive Learning >> Wanyun Cui, Guangyu Zheng and Wei Wang
+2218 # Digital Voicing of Silent Speech >> David Gaddy and Dan Klein
+CL4 # Sparse Transcription >> Steven Bird
+TACL2221 # Consistent Transcription and Translation of Speech >> Matthias Sperber, Hendra Setiawan, Christian Gollan, Udhay Nallasamy, Matthias Paulik"
+Wenhu Chen (UCSB),Zoom Q&A Session 9B: Machine Learning for NLP,"60 # Imitation Attacks and Defenses for Black-box Machine Translation Systems >> Eric Wallace, Mitchell Stern and Dawn Song
+1356 # Sequence-Level Mixed Sample Data Augmentation >> Demi Guo, Yoon Kim and Alexander Rush
+2198 # Consistency of a Recurrent Language Model With Respect to Incomplete Decoding >> Sean Welleck, Ilia Kulikov, Jaedeok Kim, Richard Yuanzhe Pang and Kyunghyun Cho
+2636 # An Exploration of Arbitrary-Order Sequence Labeling via Energy-Based Inference Networks >> Lifu Tu, Tianyu Liu and Kevin Gimpel
+2834 # Ensemble Distillation for Structured Prediction: Calibrated, Accurate, Fast - Choose Three >> Steven Reich, David Mueller and Nicholas Andrews"
+Zhongyu Wei (Fudan University),"Zoom Q&A Session 9C: Sentiment Analysis, Stylistic Analysis, and Argument Mining","1289 # Inducing Target-Specific Latent Structures for Aspect Sentiment Classification >> Chenhua Chen, Zhiyang Teng and Yue Zhang
+2549 # Affective Event Classification with Discourse-enhanced Self-training >> Yuan Zhuang, Tianyu Jiang and Ellen Riloff
+3462 # Deep Weighted MaxSAT for Aspect-based Opinion Extraction >> Meixi Wu, Wenya Wang and Sinno Jialin Pan
+668 # Multi-view Story Characterization from Movie Plot Synopses and Reviews >> Sudipta Kar, Gustavo Aguilar, Mirella Lapata and Thamar Solorio"
+Ryan Cotterell (ETH Zürich),"Zoom Q&A Session 10A: Phonology, Morphology and Word Segmentation","1320 # Mind Your Inflections! Improving NLP for Non-Standard Englishes with Base-Inflection Encoding >> Samson Tan, Shafiq Joty, Lav Varshney and Min-Yen Kan
+3563 # Measuring the Similarity of Grammatical Gender Systems by Comparing Partitions >> Arya D. McCarthy, Adina Williams, Shijia Liu, David Yarowsky and Ryan Cotterell
+3656 # RethinkCWS: Is Chinese Word Segmentation a Solved Task? >> Jinlan Fu, Pengfei Liu, Qi Zhang and Xuanjing Huang
+2208 # Learning to Pronounce Chinese Without a Pronunciation Dictionary >> Christopher Chu, Scot Fang and Kevin Knight"
+Jing Huang (JD AI Research),Zoom Q&A Session 10B: Information Extraction,"684 # Dynamic Anticipation and Completion for Multi-Hop Reasoning over Sparse Knowledge Graph >> Xin Lv, Xu Han, Lei Hou, Juanzi Li, Zhiyuan Liu, Wei Zhang, YICHI ZHANG, Hao Kong and Suhui Wu
+1011 # Knowledge Association with Hyperbolic Knowledge Graph Embeddings >> Zequn Sun, Muhao Chen, Wei Hu, Chengming Wang, Jian Dai and Wei Zhang
+2972 # Domain Knowledge Empowered Structured Neural Net for End-to-End Event Temporal Relation Extraction >> Rujun Han, Yichao Zhou and Nanyun Peng
+3084 # TeMP: Temporal Message Passing for Temporal Knowledge Graph Completion >> Jiapeng Wu, Meng Cao, Jackie Chi Kit Cheung and William L. Hamilton"
+Veselin Stoyanov (Facebook AI),Zoom Q&A Session 10C: Machine Translation and Multilinguality,"1552 # Understanding the Difficulty of Training Transformers >> Liyuan Liu, Xiaodong Liu, Jianfeng Gao, Weizhu Chen and Jiawei Han
+2581 # An Empirical Study of Generation Order for Machine Translation >> William Chan, Mitchell Stern, Jamie Kiros and Jakob Uszkoreit
+3051 # Inference Strategies for Machine Translation with Conditional Masking >> Julia Kreutzer, George Foster and Colin Cherry
+TACL1943 # Reproducible and Efficient Benchmarks for Hyperparameter Optimization of Neural Machine Translation Systems >> Xuan Zhang, Kevin Duh"
+Danqi Chen (Princeton),Zoom Q&A Session 10D: Question Answering,"1580 # AmbigQA: Answering Ambiguous Open-domain Questions >> Sewon Min, Julian Michael, Hannaneh Hajishirzi and Luke Zettlemoyer
+1262 # Tell Me How to Ask Again: Question Data Augmentation with Controllable Rewriting in Continuous Space >> Dayiheng Liu, Yeyun Gong, Jie Fu, Yu Yan, Jiusheng Chen, Jiancheng Lv, Nan Duan and Ming Zhou
+2586 # Training Question Answering Models From Synthetic Data >> Raul Puri, Ryan Spring, Mohammad Shoeybi, Mostofa Patwary and Bryan Catanzaro
+3672 # Few-Shot Complex Knowledge Base Question Answering via Meta Reinforcement Learning >> Yuncheng Hua, Yuan-Fang Li, Gholamreza Haffari, Guilin Qi and Tongtong Wu"
+Yonatan Belinkov,Zoom Q&A Session 11A: Interpretability and Analysis of Models for NLP,"1970 # Compositional and Lexical Semantics in RoBERTa, BERT and DistilBERT: A Case Study on CoQA >> Ieva Staliūnaitė and Ignacio Iacobacci
+616 # Attention is Not Only a Weight: Analyzing Transformers with Vector Norms >> Goro Kobayashi, Tatsuki Kuribayashi, Sho Yokoi and Kentaro Inui
+959 # F1 is Not Enough! Models and Evaluation Towards User-Centered Explainable Question Answering >> Hendrik Schuff, Heike Adel and Ngoc Thang Vu
+2696 # On the Ability and Limitations of Transformers to Recognize Formal Languages >> Satwik Bhattamishra, Kabir Ahuja and Navin Goyal
+"
+Shashi Narayan (Google),Zoom Q&A Session 11B: NLP Applications,"1231 # An Unsupervised Joint System for Text Generation from Knowledge Graphs and Semantic Parsing >> Martin Schmitt, Sahand Sharifzadeh, Volker Tresp and Hinrich Schütze
+3676 # DGST: a Dual-Generator Network for Text Style Transfer >> Xiao Li, Guanyi Chen, Chenghua Lin and Ruizhe Li
+1010 # A Knowledge-Aware Sequence-to-Tree Network for Math Word Problem Solving >> Qinzhuo Wu, Qi Zhang, Jinlan Fu and Xuanjing Huang
+2117 # Generating Fact Checking Briefs >> Angela Fan, Aleksandra Piktus, Fabio Petroni, Guillaume Wenzek, Marzieh Saeidi, Andreas Vlachos, Antoine Bordes and Sebastian Riedel
+3299 # Improving the Efficiency of Grammatical Error Correction with Erroneous Span Detection and Correction >> Mengyun Chen, Tao Ge, Xingxing Zhang, Furu Wei and Ming Zhou"
+Alice Oh,Zoom Q&A Session 11C: Question Answering,"TACL2129 # Beat the AI: Investigating Adversarial Human Annotation for Reading Comprehension >> Max Bartolo, Alastair Roberts, Johannes Welbl, Sebastian Riedel, Pontus Stenetorp
+315 # Coreferential Reasoning Learning for Language Representation >> Deming Ye, Yankai Lin, Jiaju Du, Zhenghao Liu, Peng Li, Maosong Sun and Zhiyuan Liu
+782 # Is Graph Structure Necessary for Multi-hop Question Answering? >> Nan Shao, Yiming Cui, Ting Liu, Shijin Wang and Guoping Hu
+TACL2041 # oLMpics - On what Language Model Pre-training Captures >> Alon Talmor, Yanai Elazar, Yoav Goldberg, Jonathan Berant"
+Aline Villavicencio,Zoom Q&A Session 11D: Semantics: Lexical Semantics,"143 # XL-WiC: A Multilingual Benchmark for Evaluating Semantic Contextualization >> Alessandro Raganato, Tommaso Pasini, Jose Camacho-Collados and Mohammad Taher Pilehvar
+2349 # Generationary or ""How We Went beyond Word Sense Inventories and Learned to Gloss"" >> Michele Bevilacqua, Marco Maru and Roberto Navigli
+2363 # Probing Pretrained Language Models for Lexical Semantics >> Ivan Vulić, Edoardo Maria Ponti, Robert Litschko, Goran Glavaš and Anna Korhonen
+TACL2011 # Nurse is Closer to Woman than Surgeon? Mitigating Gender-Biased Proximities in Word Embeddings >> Vaibhav Kumar, Tenzin Bhotia, Vaibhav Kumar, Tanmoy Chakraborty"
+Sakriani Sakti (NAIST/RIKEN AIP),Zoom Q&A Session 12A: Dialog and Interactive Systems,"407 # Cross-lingual Spoken Language Understanding with Regularized Representation Alignment >> Zihan Liu, Genta Indra Winata, Peng Xu, Zhaojiang Lin and Pascale Fung
+3257 # SLURP: A Spoken Language Understanding Resource Package >> Emanuele Bastianelli, Andrea Vanzo, Pawel Swietojanski and Verena Rieser
+3495 # Neural Conversational QA: Learning to Reason vs Exploiting Patterns >> Nikhil Verma, Abhishek Sharma, Dhiraj Madan, Danish Contractor, Harshit Kumar and Sachindra Joshi
+TACL2389 # Improving Dialog Evaluation with a Multi-reference Adversarial Dataset and Large Scale Pretraining >> Ananya Sai, Akash Mohan Kumar, Siddhartha Arora, Mitesh Khapra"
+"Aurélie Névéol (CNRS, LIMSI)",Zoom Q&A Session 12B: Information Extraction,"387 # Counterfactual Generator: A Weakly-Supervised Method for Named Entity Recognition >> Xiangji Zeng, Yunliang Li, Yuchen Zhai and Yin Zhang
+605 # Understanding Procedural Text using Interactive Entity Networks >> Jizhi Tang, Yansong Feng and Dongyan Zhao
+1974 # A Rigorous Study on Named Entity Recognition: Can Fine-tuning Pretrained Model Lead to the Promised Land? >> Hongyu Lin, Yaojie Lu, Jialong Tang, Xianpei Han, Le Sun, Zhicheng Wei and Nicholas Jing Yuan
+TACL2103 # Nested Named Entity Recognition via Second-best Sequence Learning and Decoding >> Takashi Shibuya, Eduard Hovy"
+Sebastian Ruder,Zoom Q&A Session 12C: Machine Learning for NLP,"658 # DyERNIE: Dynamic Evolution of Riemannian Manifold Embeddings for Temporal Knowledge Graph Completion >> Zhen Han, Peng Chen, Yunpu Ma and Volker Tresp
+973 # Embedding Words in Non-Vector Space with Unsupervised Graph Learning >> Maksim Riabinin, Sergei Popov, Liudmila Prokhorenkova and Elena Voita
+1399 # Debiasing knowledge graph embeddings >> Joseph Fisher, Arpit Mittal, Dave Palfrey and Christos Christodoulopoulos
+2406 # Message Passing for Hyper-Relational Knowledge Graphs >> Mikhail Galkin, Priyansh Trivedi, Gaurav Maheshwari, Ricardo Usbeck and Jens Lehmann
+TACL2255 # PERL: Pivot-based Domain Adaptation for Pre-trained Deep Contextualized Embedding Models >> Roi Reichart, Eyal Ben David, Carmel Rabinovitz"
+Rui Xia,"Zoom Q&A Session 12D: Sentiment Analysis, Stylistic Analysis, and Argument Mining","384 # Relation-aware Graph Attention Networks with Relational Position Encodings for Emotion Recognition in Conversations >> Taichi Ishiwatari, Yuki Yasuda, Taro Miyazaki and Jun Goto
+2094 # BERT Knows Punta Cana is not just beautiful, it's gorgeous: Ranking Scalar Adjectives with Contextualised Representations >> Aina Garí Soler and Marianna Apidianaki
+3023 # Feature Adaptation of Pre-Trained Language Models across Languages and Domains with Robust Self-Training >> Hai Ye, Qingyu Tan, Ruidan He, Juntao Li, Hwee Tou Ng and Lidong Bing
+2068 # Textual Data Augmentation for Efficient Active Learning on Tiny Datasets >> Husam Quteineh, Spyridon Samothrakis and Richard Sutcliffe"
+Vincent Ng,Zoom Q&A Session 13A: Discourse and Pragmatics,"1972 # ""I'd rather just go to bed"": Understanding Indirect Answers >> Annie Louis, Dan Roth and Filip Radlinski
+2072 # PowerTransformer: Unsupervised Controllable Revision for Biased Language Correction >> Xinyao Ma, Maarten Sap, Hannah Rashkin and Yejin Choi
+2205 # MEGA RST Discourse Treebanks with Structure and Nuclearity from Scalable Distant Sentiment Supervision >> Patrick Huber and Giuseppe Carenini
+2377 # Centering-based Neural Coherence Modeling with Hierarchical Discourse Segments >> Sungho Jeon and Michael Strube
+3072 # Keeping Up Appearances: Computational Modeling of Face Acts in Persuasion Oriented Discussions >> Ritam Dutt, Rishabh Joshi and Carolyn Rose"
+Thamar Solorio,Zoom Q&A Session 13B: NLP Applications,"3573 # To Schedule or not to Schedule: Extracting Task Specific Temporal Entities and Associated Negation Constraints >> Barun Patra, Chala Fufa, Pamela Bhattacharya and Charles Lee
+CL3 # Predicting In-game Actions from Interviews of NBA Players >> Nadav Oved, Amir Feder, Roi Reichart
+2167 # An Empirical Study on Large-Scale Multi-Label Text Classification Including Few and Zero-Shot Labels >> Ilias Chalkidis, Manos Fergadiotis, Sotiris Kotitsas, Prodromos Malakasiotis, Nikolaos Aletras and Ion Androutsopoulos
+2579 # Which *BERT? A Survey Organizing Contextualized Encoders >> Patrick Xia, Shijie Wu and Benjamin Van Durme
+2962 # Fact or Fiction: Verifying Scientific Claims >> David Wadden, Shanchuan Lin, Kyle Lo, Lucy Lu Wang, Madeleine van Zuylen, Arman Cohan and Hannaneh Hajishirzi"
+Annemarie Friedrich (Bosch),"Zoom Q&A Session 13C: Semantics: Sentence-level Semantics, Textual Inference and Other areas","1957 # Semantic Role Labeling as Syntactic Dependency Parsing >> Tianze Shi, Igor Malioutov and Ozan Irsoy
+2533 # PARADE: A New Dataset for Paraphrase Identification Requiring Computer Science Domain Knowledge >> Yun He, Zhuoer Wang, Yin Zhang, Ruihong Huang and James Caverlee
+3291 # Causal Inference of Script Knowledge >> Noah Weber, Rachel Rudinger and Benjamin Van Durme
+1408 # Towards Debiasing NLU Models from Unknown Biases >> Prasetya Ajie Utama, Nafise Sadat Moosavi and Iryna Gurevych"
+Ryan Cotterell (ETH Zürich),"Zoom Q&A Session 13D: Syntax: Tagging, Chunking, and Parsing","CL1 # Tractable Lexical-Functional Grammar >> Jürgen Wedekind, Ronald M. Kaplan
+CL5 # Efficient Outside Computation >> Daniel Gildea
+TACL1936 # Consistent Unsupervised Estimators for Anchored PCFGs >> Alexander Clark, Nathanaël Fijalkow
+TACL2141 # The Return of Lexical Dependencies: Neural Lexicalized PCFGs >> Hao Zhu, Yonatan Bisk, Graham Neubig
+2684 # On the Role of Supervision in Unsupervised Constituency Parsing >> Haoyue Shi, Karen Livescu and Kevin Gimpel"
+Julia Kreutzer (Google),Zoom Q&A Session 14A: Machine Translation and Multilinguality,"522 # Language Model Prior for Low-Resource Neural Machine Translation >> Christos Baziotis, Barry Haddow and Alexandra Birch
+2114 # Detecting Word Sense Disambiguation Biases in Machine Translation for Model-Agnostic Adversarial Attacks >> Denis Emelin, Ivan Titov and Rico Sennrich
+1803 # MAD-X: An Adapter-Based Framework for Multi-Task Cross-Lingual Transfer >> Jonas Pfeiffer, Ivan Vulić, Iryna Gurevych and Sebastian Ruder
+2055 # Translation Artifacts in Cross-lingual Transfer Learning >> Mikel Artetxe, Gorka Labaka and Eneko Agirre"
+Dong Nguyen,Zoom Q&A Session 14B: Computational Social Science and Social Media,"2510 # A Time-Aware Transformer Based Model for Suicide Ideation Detection on Social Media >> Ramit Sawhney, Harshit Joshi, Saumya Gandhi and Rajiv Ratn Shah
+3644 # Weakly Supervised Learning of Nuanced Frames for Analyzing Polarization in News Media >> Shamik Roy and Dan Goldwasser
+872 # Where Are the Facts? Searching for Fact-checked Information to Alleviate the Spread of Fake News >> Nguyen Vo and Kyumin Lee
+2614 # Fortifying Toxic Speech Detectors Against Veiled Toxicity >> Xiaochuang Han and Yulia Tsvetkov
+3151 # Explainable Automated Fact-Checking for Public Health Claims >> Neema Kotonya and Francesca Toni"
+Yishu Miao (Imperial College London),Zoom Q&A Session 14C: Machine Learning for NLP,"2574 # Interactive Fiction Game Playing as Multi-Paragraph Reading Comprehension with Reinforcement Learning >> Xiaoxiao Guo, Mo Yu, Yupeng Gao, Chuang Gan, Murray Campbell and Shiyu Chang
+TACL2083 # A Neural Generative Model for Joint Learning Topics and Topic-Specific Word Embeddings >> Lixing Zhu, Deyu Zhou, Yulan He
+TACL2093 # Topic Modeling in Embedding Spaces >> Adji Bousso Dieng, Francisco Ruiz, David Blei
+2221 # DORB: Dynamically Optimizing Multiple Rewards with Bandits >> Ramakanth Pasunuru, Han Guo and Mohit Bansal"
+Heng Ji (UIUC & Amazon),Zoom Q&A Session 14D: Information Extraction,"485 # MedFilter: Improving Extraction of Task-relevant Utterances through Integration of Discourse Structure and Ontological Knowledge >> Sopan Khosla, Shikhar Vashishth, Jill Fain Lehman and Carolyn Rose
+2570 # Hierarchical Evidence Set Modeling for Automated Fact Extraction and Verification >> Shyam Subramanian and Kyumin Lee
+2724 # Program Enhanced Fact Verification with Verbalization and Graph Attention Network >> Xiaoyu Yang, Feng Nie, Yufei Feng, Quan Liu, Zhigang Chen and Xiaodan Zhu
+2750 # Constrained Fact Verification for FEVER >> Adithya Pratapa, Sai Muralidhar Jayanthi and Kavya Nerella
+3216 # Entity Linking in 100 Languages >> Jan A. Botha, Zifei Shan and Daniel Gillick"
+Lifu Huang (Virginia Tech),Zoom Q&A Session 15A: Information Retrieval and Text Mining,"666 # Exploiting Structured Knowledge in Text via Graph-Guided Representation Learning >> Tao Shen, Yi Mao, Pengcheng He, Guodong Long, Adam Trischler and Weizhu Chen
+989 # Named Entity Recognition Only from Word Embeddings >> Ying Luo, Hai Zhao and Junlang Zhan
+1611 # Text Classification Using Label Names Only: A Language Model Self-Training Approach >> Yu Meng, Yunyi Zhang, Jiaxin Huang, Chenyan Xiong, Heng Ji, Chao Zhang and Jiawei Han
+2756 # Neural Topic Modeling with Cycle-Consistent Adversarial Training >> Xuemeng Hu, Rui Wang, Deyu Zhou and Yuxuan Xiong"
+Zhongyu Wei (Fudan University),"Zoom Q&A Session 15B: NLP Applications
+","3065 # Data Boost: Text Data Augmentation Through Reinforcement Learning Guided Conditional Generation >> Ruibo Liu, Guangxuan Xu, Chenyan Jia, Weicheng Ma, Lili Wang and Soroush Vosoughi
+3438 # A State-independent and Time-evolving Network for Early Rumor Detection in Social Media >> Rui Xia, Kaizhou Xuan and Jianfei Yu
+2990 # PyMT5: multi-mode translation of natural language and Python code with transformers >> Colin Clement, Dawn Drain, Jonathan Timcheck, Alexey Svyatkovskiy and Neel Sundaresan
+3054 # PathQG: Neural Question Generation from Facts >> Siyuan Wang, Zhongyu Wei, Zhihao Fan, Zengfeng Huang, Weijian Sun, Qi ZHANG and Xuanjing Huang
+1135 # What time is it? Temporal Analysis of Novels >> Allen Kim, Charuta Pethe and Steve Skiena"
+Siva Reddy (McGill/MILA),"Zoom Q&A Session 15C: Semantics: Sentence-level Semantics, Textual Inference and Other areas","2179 # COGS: A Compositional Generalization Challenge Based on Semantic Interpretation >> Najoung Kim and Tal Linzen
+2416 # An Analysis of Natural Language Inference Benchmarks through the Lens of Negation >> Md Mosharaf Hossain, Venelin Kovatchev, Pranoy Dutta, Tiffany Kao, Elizabeth Wei and Eduardo Blanco
+3635 # On the Sentence Embeddings from Pre-trained Language Models >> Bohan Li, Hao Zhou, Junxian He, Mingxuan Wang, Yiming Yang and Lei Li
+TACL2055 # An Empirical Study on Robustness to Spurious Correlations using Pre-trained Language Models >> Lifu Tu, Spandana Gella, Garima Lalwani, He He
+1540 # What Can We Learn from Collective Human Opinions on Natural Language Inference Data? >> Yixin Nie, Xiang Zhou and Mohit Bansal"
+Piji Li (Tencent AI Lab),"Zoom Q&A Session 15D: Language Generation
+","2389 # Improving Text Generation with Student-Forcing Optimal Transport >> Jianqiao Li, Chunyuan Li, Guoyin Wang, Hao Fu, Yuhchen Lin, Liqun Chen, Yizhe Zhang, Chenyang Tao, Ruiyi Zhang, Wenlin Wang, Dinghan Shen, Qian Yang and Lawrence Carin
+252 # UNION: An Unreferenced Metric for Evaluating Open-ended Story Generation >> Jian Guan and Minlie Huang
+334 # F^2-Softmax: Diversifying Neural Text Generation via Frequency Factorized Softmax >> Byung-Ju Choi, Jimin Hong, David Park and Sang Wan Lee
+3184 # Partially-Aligned Data-to-Text Generation with Distant Supervision >> Zihao Fu, Bei Shi, Wai Lam, Lidong Bing and Zhiyuan Liu
+TACL1983 # How Can We Know What Language Models Know >> Zhengbao Jiang, Frank F. Xu, Jun Araki, Graham Neubig"
+Linfeng Song (Tencent AI Lab),Zoom Q&A Session 16A: Dialog and Interactive Systems,"1797 # Like hiking? You probably enjoy nature: Persona-grounded Dialog with Commonsense Expansions >> Bodhisattwa Prasad Majumder, Harsh Jhamtani, Taylor Berg-Kirkpatrick and Julian McAuley
+3318 # A Probabilistic End-To-End Task-Oriented Dialog Model with Latent Belief States towards Semi-Supervised Learning >> Yichi Zhang, Zhijian Ou, Min Hu and Junlan Feng
+317 # The World is Not Binary: Learning to Rank with Grayscale Data for Dialogue Response Selection >> Zibo Lin, Deng Cai, Yan Wang, Xiaojiang Liu, Haitao Zheng and Shuming Shi
+1606 # GRADE: Automatic Graph-Enhanced Coherence Metric for Evaluating Open-Domain Dialogue Systems >> Lishan Huang, Zheng Ye, Jinghui Qin, Liang Lin and Xiaodan Liang
+233 # MedDialog: Large-scale Medical Dialogue Datasets >> Guangtao Zeng, Wenmian Yang, Zeqian Ju, Yue Yang, Sicheng Wang, Ruisi Zhang, Meng Zhou, Jiaqi Zeng, Xiangyu Dong, Ruoyu Zhang, Hongchao Fang, Penghui Zhu, Shu Chen and Pengtao Xie"
+Lei Li (ByteDance),Zoom Q&A Session 16B: Interpretability and Analysis of Models for NLP,"638 # An information theoretic view on selecting linguistic probes >> Zining Zhu and Frank Rudzicz
+2238 # With Little Power Comes Great Responsibility >> Dallas Card, Peter Henderson, Urvashi Khandelwal, Robin Jia, Kyle Mahowald and Dan Jurafsky
+2705 # Dataset Cartography: Mapping and Diagnosing Datasets with Training Dynamics >> Swabha Swayamdipta, Roy Schwartz, Nicholas Lourie, Yizhong Wang, Hannaneh Hajishirzi, Noah A. Smith and Yejin Choi
+2814 # Evaluating and Characterizing Human Rationales >> Samuel Carton, Anirudh Rathore and Chenhao Tan"
+Logan Lebanoff (UCF),Zoom Q&A Session 16C: Summarization,"1835 # On Extractive and Abstractive Neural Document Summarization with Transformer Language Models >> Jonathan Pilault, Raymond Li, Sandeep Subramanian and Chris Pal
+2125 # Multi-Fact Correction in Abstractive Text Summarization >> Yue Dong, Shuohang Wang, Zhe Gan, Yu Cheng, Jackie Chi Kit Cheung and Jingjing Liu
+2506 # Evaluating the Factual Consistency of Abstractive Text Summarization >> Wojciech Kryscinski, Bryan McCann, Caiming Xiong and Richard Socher
+3552 # Re-evaluating Evaluation in Text Summarization >> Manik Bhandari, Pranav Narayan Gour, Atabak Ashfaq, Pengfei Liu and Graham Neubig
+702 # VMSMO: Learning to Generate Multimodal Summary for Video-based News Articles >> Mingzhe Li, Xiuying Chen, Shen Gao, Zhangming Chan, Dongyan Zhao and Rui Yan"

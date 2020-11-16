@@ -24,9 +24,15 @@ const Subsession = ({paperID, paperTitle, paperAuthors, highlight}) => (
     </li>
 )
 
-const Session = ({sessionDisplayName, subsessions, highlightId}) => (
+const SessionChair = ({chair}) =>
+    <span className="session-chair-info">
+      <strong>Chair:</strong> {chair}
+    </span>
+
+const Session = ({sessionDisplayName, subsessions, highlightId, sessionChair}) => (
     <article className="session-cell">
       <h4 className="session-name">{sessionDisplayName}</h4>
+      {sessionChair ? <SessionChair {...sessionChair} /> : null}
       <ul className="session-subsessions">{subsessions.map(ss =>
           <Subsession {...ss} key={ss.paperID} highlight={domIdForPaper(ss.paperID) === highlightId}/>)
       }
@@ -97,8 +103,14 @@ const normalizeSession = (singleSessionGroupGql) => {
   return {startMoment, endMoment, subsessions, sessionNumber, sessionDisplayName}
 }
 
-const sessionInfoFromGql = (allSessionGroups) => {
+const sessionInfoFromGql = (allSessionGroups, sessionChairs) => {
   const normalizedSessions = allSessionGroups.map(normalizeSession)
+  
+  const chairsBySessionName = {}
+  sessionChairs.forEach(({sessionLongName, chair}) => {
+    chairsBySessionName[sessionLongName] = {chair}
+  })
+  
   const byStartTime = {}
   normalizedSessions.forEach(ses => {
     const {startMoment, endMoment, subsessions, sessionNumber, sessionDisplayName} = ses
@@ -107,7 +119,7 @@ const sessionInfoFromGql = (allSessionGroups) => {
     if (existing === undefined) {
       byStartTime[timeKey] = {startMoment, endMoment, parallelSessions: []}
     }
-    byStartTime[timeKey].parallelSessions.push({subsessions, sessionNumber, sessionDisplayName});
+    byStartTime[timeKey].parallelSessions.push({subsessions, sessionNumber, sessionDisplayName, sessionChair: chairsBySessionName[sessionDisplayName]});
   })
   const sessions = Object.values(byStartTime)
   sessions.sort((ses1, ses2) => ses1.startMoment.unix() - ses2.startMoment.unix())
@@ -115,8 +127,9 @@ const sessionInfoFromGql = (allSessionGroups) => {
 }
 
 const SchedulePage = ({data, location}) => {
-  const {markdownRemark: page, footerData, navbarData, secondaryNavData, site, allScheduleCsv} = data;
+  const {markdownRemark: page, footerData, navbarData, secondaryNavData, site, allScheduleCsv, allSessionChairsCsv} = data;
   const {allSessionGroups} = allScheduleCsv
+  const {sessionChairs} = allSessionChairsCsv
   const locState = location.state
   
   return (
@@ -125,7 +138,7 @@ const SchedulePage = ({data, location}) => {
         <StandardPageTemplate page={{...page}}>
           <HTMLContent className="default-content" content={page.html}/>
           <ConferenceSchedule
-              allSessionInfo={sessionInfoFromGql(allSessionGroups)}
+              allSessionInfo={sessionInfoFromGql(allSessionGroups, sessionChairs)}
               highlightId={locState ? locState.highlightId || null : null}
           />
         </StandardPageTemplate>
@@ -161,6 +174,12 @@ export const schedulePageQuery = graphql`
           paperTitle
           paperAuthors
         }
+      }
+    }
+    allSessionChairsCsv {
+      sessionChairs: nodes {
+        sessionLongName
+        chair
       }
     }
     ...LayoutFragment
