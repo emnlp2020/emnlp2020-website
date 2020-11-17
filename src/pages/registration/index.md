@@ -65,7 +65,7 @@ member before Oct. 15**_
 ## Contact Details
 
 Please direct technical questions about the web registration form
-to [the technical team](mailto:gibbs@agora-net.com)
+to [the help desk](mailto:emnlp-2020-helpdesk@googlegroups.com)
 
 Please direct questions about **your** registration, including alternate
 methods of payment, to [Pat Kirby](mailto:acl.PatKirby@gmail.com) 
