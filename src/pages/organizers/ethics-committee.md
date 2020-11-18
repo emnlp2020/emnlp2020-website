@@ -17,6 +17,6 @@ seo:
 * Ryan Georgi, University of Washington, USA
 * Alvin	Grissom II, Haverford College, USA
 * Margot Mieskes, Darmstadt University of Applied Sciences, Germany
-* Aurelie Nevol, LIMSI, France
+* Aurélie Névéol, Université Paris Saclay, CNRS, LIMSI, France
 * Amanda Stent, Bloomberg, USA
 
