@@ -1,6 +1,10 @@
 ---
 templateKey: navbar
 menuItems:
+  - label: virtual conference
+    longLabel: Attend EMNLP 2020 virtually (registrant login required)
+    linkType: external
+    linkURL: https://virtual.2020.emnlp.org
   - label: registration
     linkURL: /registration
     linkType: internal

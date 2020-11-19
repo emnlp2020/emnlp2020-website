@@ -10,6 +10,9 @@ seo:
 
 * **[Registration Site](https://aclweb.org/conference/virtual-emnlp-2020-conference-registration/)**
 
+**For any technical issues about the web registration form, please 
+ [contact the help desk](mailto:emnlp-2020-helpdesk@googlegroups.com)**
+
 The EMNLP 2020 registration fees are drastically reduced, reflecting our
 move to being 100% virtual. We are offering Early rates through October
 30th and Late rates beginning October 31st. We include early and late
@@ -65,7 +68,7 @@ member before Oct. 15**_
 ## Contact Details
 
 Please direct technical questions about the web registration form
-to [the technical team](mailto:gibbs@agora-net.com)
+to [the help desk](mailto:emnlp-2020-helpdesk@googlegroups.com)
 
 Please direct questions about **your** registration, including alternate
 methods of payment, to [Pat Kirby](mailto:acl.PatKirby@gmail.com) 
