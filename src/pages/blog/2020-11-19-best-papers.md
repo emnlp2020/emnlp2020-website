@@ -51,7 +51,7 @@ Not awarded.
 
 **Best Demonstration Paper**
 
-:hugging_face: Transformers: State-of-the-art Natural Language Processing  
+ 🤗 Transformers: State-of-the-art Natural Language Processing  
 *Thomas Wolf, Lysandre Debut, Victor Sanh, Julien Chaumond, Clement Delangue, Anthony Moi, Pierric Cistac, Tim Rault, Rémi Louf, Morgan Funtowicz, Joe Davison, Sam Shleifer, Patrick von Platen, Clara Ma, Yacine Jernite, Julien Plu, Canwen Xu, Teven Le Scao, Sylvain Gugger, Mariama Drame, Quentin Lhoest, Alexander M. Rush*
 
 
