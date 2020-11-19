@@ -36,11 +36,17 @@ Digital voicing of Silent Speech
 If beam search is the answer, what was the question?  
 *Clara Meister, Ryan Cotterell and Tim Vieira*
 
+<p/>
+
 GLUCOSE: GeneraLized and COntextualized Story Explanations  
 *Nasrin Mostafazadeh, Aditya Kalyanpur, Lori Moon, David Buchanan, Lauren Berkowitz, Or Biran and Jennifer Chu-Carroll*
 
+<p/>
+
 Spot The Bot: A Robust and Efficient Framework for the Evaluation of Conversational Dialogue Systems  
 *Jan Deriu, Don Tuggener, Pius von Däniken, Jon Ander Campos, Alvaro Rodrigo, Thiziri Belkacem, Aitor Soroa, Eneko Agirre and Mark Cieliebak*
+
+<p/>
 
 Visually Grounded Compound PCFGs  
 *Yanpeng Zhao and Ivan Titov*
