@@ -26,12 +26,12 @@ Note that the best demonstration paper was decided differently, being chosen dir
 
 The following papers have been given awards.
 
-**Best Paper**
+### Best Paper
 
 Digital voicing of Silent Speech  
 *David Gaddy and Dan Klein*
 
-**Honourable Mention Papers**
+### Honourable Mention Papers
 
 If beam search is the answer, what was the question?  
 *Clara Meister, Ryan Cotterell and Tim Vieira*
@@ -45,11 +45,11 @@ Spot The Bot: A Robust and Efficient Framework for the Evaluation of Conversatio
 Visually Grounded Compound PCFGs  
 *Yanpeng Zhao and Ivan Titov*
 
-**Best Short Paper**
+### Best Short Paper
 
 Not awarded.
 
-**Best Demonstration Paper**
+### Best Demonstration Paper
 
  🤗 Transformers: State-of-the-art Natural Language Processing  
 *Thomas Wolf, Lysandre Debut, Victor Sanh, Julien Chaumond, Clement Delangue, Anthony Moi, Pierric Cistac, Tim Rault, Rémi Louf, Morgan Funtowicz, Joe Davison, Sam Shleifer, Patrick von Platen, Clara Ma, Yacine Jernite, Julien Plu, Canwen Xu, Teven Le Scao, Sylvain Gugger, Mariama Drame, Quentin Lhoest, Alexander M. Rush*
