@@ -40,7 +40,7 @@
     "react-popover": "^0.5.10",
     "react-tiny-popover": "^6.0.0-beta.2",
     "remark": "^12.0.0",
-    "remark-html": "^11.0.2",
+    "remark-html": "^13.0.2",
     "slug": "^2.1.1",
     "strip-markdown": "^3.1.2",
     "uuid": "^3.3.3"
